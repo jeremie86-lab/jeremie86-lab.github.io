@@ -1,6 +1,6 @@
 {% assign s = site.data.settings %}{% assign all_series = site.series | sort: 'order' %}
 <header class="site-header" data-header>
-  <a class="brand" href="{{ '/' | relative_url }}">{{ s.name }}</a>
+  <a class="brand" href="{{ '/' | relative_url }}">{{ s.name }}<span class="brand-dot" aria-hidden="true">.</span></a>
   <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
     <span class="sr">Menu</span><span class="bars" aria-hidden="true"></span>
   </button>
