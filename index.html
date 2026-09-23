@@ -7,7 +7,8 @@ body_class: page-home
 {% assign all_series = site.series | sort: 'order' %}
 {% assign expos = site.exhibitions | where: 'featured', true | sort: 'start' | reverse %}
 
-<section class="hero" style="--hero: url('{{ s.hero_image | relative_url }}')">
+<section class="hero">
+  <div class="hero-bg" style="background-image: url('{{ s.hero_image | relative_url }}')" aria-hidden="true"></div>
   <div class="hero-inner wrap">
     <p class="kicker">{{ s.hero_kicker }}</p>
     <h1 class="display hero-title">{{ s.hero_title }}</h1>
