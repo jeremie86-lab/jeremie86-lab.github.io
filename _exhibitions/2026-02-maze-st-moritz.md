@@ -16,13 +16,9 @@ photos:
   - src: /assets/img/exhibitions/maze-st-moritz/maze-st-moritz-02.jpg
     caption: "Installation view"
   - src: /assets/img/exhibitions/maze-st-moritz/maze-st-moritz-03.jpg
-    caption: "Installation view"
-  - src: /assets/img/exhibitions/maze-st-moritz/maze-st-moritz-05.jpg
-    caption: "Installation view"
+    caption: "Entrance to the fair"
   - src: /assets/img/exhibitions/maze-st-moritz/maze-st-moritz-04.jpg
-    caption: "Installation view"
-  - src: /assets/img/exhibitions/maze-st-moritz/maze-st-moritz-06.jpg
-    caption: "MAZE Art St. Moritz"
+    caption: "Outside the Hotel Reine Victoria"
 credit: "Photographs: Jeremy Spierer"
 ---
 

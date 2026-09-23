@@ -8,21 +8,17 @@ year: "2026"
 start: 2026-02-19
 kind: "Art fair"
 featured: true
-cover: /assets/img/exhibitions/maze-gstaad/maze-gstaad-02.jpg
+cover: /assets/img/exhibitions/maze-gstaad/maze-gstaad-03.jpg
 link: "https://www.mazepresents.com/salon/art-gstaad"
 photos:
-  - src: /assets/img/exhibitions/maze-gstaad/maze-gstaad-02.jpg
-    caption: "The F.P.Journe stand, with two collaborative works and a painting by Tiphaine Koltes"
   - src: /assets/img/exhibitions/maze-gstaad/maze-gstaad-01.jpg
     caption: "Two collaborative works beside a painting by Tiphaine Koltes"
-  - src: /assets/img/exhibitions/maze-gstaad/maze-gstaad-04.jpg
-    caption: "The F.P.Journe stand"
+  - src: /assets/img/exhibitions/maze-gstaad/maze-gstaad-02.jpg
+    caption: "At the stand, 19 February 2026"
   - src: /assets/img/exhibitions/maze-gstaad/maze-gstaad-03.jpg
-    caption: "19 February 2026"
-  - src: /assets/img/exhibitions/maze-gstaad/maze-gstaad-06.jpg
-    caption: "Installation view"
-  - src: /assets/img/exhibitions/maze-gstaad/maze-gstaad-05.jpg
-    caption: "19 February 2026"
+    caption: "The F.P.Journe stand"
+  - src: /assets/img/exhibitions/maze-gstaad/maze-gstaad-04.jpg
+    caption: "First evening of the fair"
 credit: "Photographs: Jeremy Spierer"
 ---
 
