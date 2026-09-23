@@ -1,0 +1,95 @@
+# Configuration de l'éditeur visuel Pages CMS (https://app.pagescms.org)
+media:
+  input: assets/img
+  output: /assets/img
+  extensions: [jpg, jpeg, png, webp]
+content:
+  - name: series
+    label: Series
+    type: collection
+    path: _series
+    filename: "{primary}.md"
+    view:
+      fields: [title, order, subtitle]
+      primary: title
+      sort: [order]
+    fields:
+      - {name: title, label: Title, type: string, required: true}
+      - {name: subtitle, label: Subtitle, type: string}
+      - {name: order, label: "Order on the site (1 = first)", type: number}
+      - {name: year, label: Year, type: string}
+      - {name: cover, label: Cover image (home page card), type: image}
+      - name: photos
+        label: Photos (drag to reorder)
+        type: object
+        list: true
+        fields:
+          - {name: src, label: Image, type: image}
+          - {name: caption, label: Caption (optional), type: string}
+      - {name: body, label: Statement, type: text}
+  - name: exhibitions
+    label: Exhibitions
+    type: collection
+    path: _exhibitions
+    filename: "{year}-{primary}.md"
+    view:
+      fields: [title, year, city]
+      primary: title
+      sort: [start]
+    fields:
+      - {name: title, label: Title, type: string, required: true}
+      - {name: with, label: "Artists / context", type: string}
+      - {name: kind, label: "Type (Solo exhibition, Art fair…)", type: string}
+      - {name: venue, label: Venue, type: string}
+      - {name: city, label: City, type: string}
+      - {name: dates, label: "Dates as displayed", type: string}
+      - {name: year, label: Year, type: string}
+      - {name: start, label: "Start date (used for sorting)", type: date}
+      - {name: featured, label: "Show large, with photos", type: boolean}
+      - {name: cover, label: Cover image, type: image}
+      - {name: link, label: Venue website, type: string}
+      - {name: related_series, label: "Related series (file name, e.g. croco)", type: string}
+      - name: photos
+        label: Photos
+        type: object
+        list: true
+        fields:
+          - {name: src, label: Image, type: image}
+          - {name: caption, label: Caption, type: string}
+      - {name: credit, label: Photo credit, type: string}
+      - {name: body, label: Text, type: text}
+  - name: settings
+    label: Settings (home page, contact)
+    type: file
+    path: _data/settings.yml
+    fields:
+      - {name: name, label: Name, type: string}
+      - {name: tagline, label: Tagline, type: string}
+      - {name: hero_image, label: Home page large image, type: image}
+      - {name: hero_kicker, label: Small line above the big title, type: string}
+      - {name: hero_title, label: Big title, type: string}
+      - {name: hero_text, label: Text under the big title, type: text}
+      - {name: hero_link, label: Button link, type: string}
+      - {name: statement_title, label: Statement title, type: string}
+      - {name: statement, label: Statement, type: text}
+      - name: offers
+        label: Three blocks (prints, commissions…)
+        type: object
+        list: true
+        fields:
+          - {name: title, label: Title, type: string}
+          - {name: text, label: Text, type: text}
+      - {name: email, label: Email, type: string}
+      - {name: instagram, label: Instagram username, type: string}
+      - {name: gallery_name, label: Gallery name, type: string}
+      - {name: gallery_url, label: Gallery page, type: string}
+      - {name: artsy_url, label: Artsy page, type: string}
+  - name: awards
+    label: Awards
+    type: file
+    path: _data/awards.yml
+    list: true
+    fields:
+      - {name: year, label: Year, type: string}
+      - {name: title, label: Award, type: string}
+      - {name: detail, label: Detail, type: string}

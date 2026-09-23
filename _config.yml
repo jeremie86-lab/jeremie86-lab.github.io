@@ -1,0 +1,17 @@
+title: "Jeremy Spierer"
+description: "Jeremy Spierer, photographer based in Geneva. Series, exhibitions and contact."
+url: ""        # ex. https://www.jeremyspierer.com une fois le domaine branché
+baseurl: ""    # laisser vide pour un site <utilisateur>.github.io ou un domaine perso
+lang: en
+markdown: kramdown
+permalink: pretty
+collections:
+  series:
+    output: true
+    permalink: /series/:name/
+  exhibitions:
+    output: false
+defaults:
+  - scope: {path: "", type: series}
+    values: {layout: series}
+exclude: [README.md, site_images.json, "*.tar", .pages.yml, Gemfile, Gemfile.lock, vendor]

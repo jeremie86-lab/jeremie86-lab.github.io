@@ -1,0 +1,70 @@
+---
+layout: default
+title: Home
+body_class: page-home
+---
+{% assign s = site.data.settings %}
+{% assign all_series = site.series | sort: 'order' %}
+{% assign expos = site.exhibitions | where: 'featured', true | sort: 'start' | reverse %}
+
+<section class="hero" style="--hero: url('{{ s.hero_image | relative_url }}')">
+  <div class="hero-inner wrap">
+    <p class="kicker">{{ s.hero_kicker }}</p>
+    <h1 class="display hero-title">{{ s.hero_title }}</h1>
+    <p class="hero-text">{{ s.hero_text }}</p>
+    <a class="btn" href="{{ s.hero_link | relative_url }}">See the exhibition</a>
+  </div>
+</section>
+
+<section class="block wrap wide" aria-labelledby="h-series">
+  <div class="block-head">
+    <h2 id="h-series" class="h2">Series</h2>
+    <a class="more" href="{{ '/series/' | relative_url }}">All series</a>
+  </div>
+  <div class="cards">
+    {% for x in all_series %}
+    <a class="card" href="{{ x.url | relative_url }}">
+      <img src="{{ x.cover | default: x.photos[0].src | relative_url }}" alt="" loading="lazy" decoding="async">
+      <span class="card-t">{{ x.title }}</span>
+      {% if x.subtitle %}<span class="card-s">{{ x.subtitle }}</span>{% endif %}
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="statement wrap">
+  <h2 class="display statement-t">{{ s.statement_title }}</h2>
+  <p class="lead">{{ s.statement }}</p>
+  <a class="more" href="{{ '/about/' | relative_url }}">About Jeremy</a>
+</section>
+
+<section class="offers wrap" aria-label="What I offer">
+  {% for o in s.offers %}
+  <div class="offer">
+    <h3 class="h3">{{ o.title }}</h3>
+    <p>{{ o.text }}</p>
+  </div>
+  {% endfor %}
+</section>
+
+<section class="block wrap wide" aria-labelledby="h-expo">
+  <div class="block-head">
+    <h2 id="h-expo" class="h2">Exhibitions</h2>
+    <a class="more" href="{{ '/exhibitions/' | relative_url }}">All exhibitions</a>
+  </div>
+  <div class="expo-cards">
+    {% for e in expos limit: 3 %}
+    <a class="expo-card" href="{{ '/exhibitions/' | relative_url }}#{{ e.slug }}">
+      {% if e.cover %}<img src="{{ e.cover | relative_url }}" alt="" loading="lazy" decoding="async">{% endif %}
+      <span class="label">{{ e.kind }} · {{ e.city }}</span>
+      <span class="expo-t">{{ e.title }}</span>
+      <span class="muted">{{ e.dates }}</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="cta wrap">
+  <p class="display cta-t">Prints, commissions, collaborations</p>
+  <a class="btn" href="{{ '/contact/' | relative_url }}">Get in touch</a>
+</section>

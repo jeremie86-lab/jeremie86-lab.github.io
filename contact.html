@@ -1,0 +1,16 @@
+---
+layout: default
+title: Contact
+permalink: /contact/
+---
+{% assign s = site.data.settings %}
+<section class="contact wrap">
+  <h1 class="display">Contact</h1>
+  <p class="lead">Hand-signed prints in small editions, photoshoots and artistic collaborations. Write to me directly.</p>
+  <dl class="contact-list">
+    <div><dt class="label">Email</dt><dd><a href="mailto:{{ s.email }}">{{ s.email }}</a></dd></div>
+    <div><dt class="label">Instagram</dt><dd><a href="https://www.instagram.com/{{ s.instagram }}/" rel="noopener" target="_blank">@{{ s.instagram }}</a></dd></div>
+    <div><dt class="label">Gallery</dt><dd><a href="{{ s.gallery_url }}" rel="noopener" target="_blank">{{ s.gallery_name }}</a>, Rue de la Madeleine 10, 1204 Geneva</dd></div>
+    <div><dt class="label">Based in</dt><dd>Geneva, Switzerland</dd></div>
+  </dl>
+</section>

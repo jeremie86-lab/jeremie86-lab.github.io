@@ -1,0 +1,55 @@
+---
+layout: default
+title: Exhibitions
+permalink: /exhibitions/
+---
+{% assign today = site.time | date: '%Y-%m-%d' %}
+{% assign all = site.exhibitions | sort: 'start' | reverse %}
+<section class="page-head wrap">
+  <h1 class="display">Exhibitions</h1>
+</section>
+
+{% for e in all %}{% assign d = e.start | date: '%Y-%m-%d' %}
+{% if e.featured %}
+<article class="expo wrap wide" id="{{ e.slug }}">
+  <div class="expo-grid">
+    {% if e.cover %}<figure class="expo-cover"><img src="{{ e.cover | relative_url }}" alt="{{ e.title | escape }}" loading="{% if forloop.first %}eager{% else %}lazy{% endif %}" decoding="async"></figure>{% endif %}
+    <div class="expo-body">
+      <p class="kicker">{% if d >= today %}Upcoming · {% endif %}{{ e.kind }}</p>
+      <h2 class="display expo-title">{{ e.title }}</h2>
+      {% if e.with %}<p class="expo-with">{{ e.with }}</p>{% endif %}
+      <p class="expo-meta">{{ e.venue }}{% if e.city != '' %}, {{ e.city }}{% endif %}<br>{{ e.dates }}</p>
+      <div class="prose">{{ e.content | markdownify }}</div>
+      <p class="expo-links">
+        {% if e.related_series %}{% assign rs = site.series | where: 'slug', e.related_series | first %}{% if rs %}<a class="more" href="{{ rs.url | relative_url }}">See the series {{ rs.title }}</a>{% endif %}{% endif %}
+        {% if e.link %}<a class="more" href="{{ e.link }}" rel="noopener" target="_blank">Venue website</a>{% endif %}
+      </p>
+    </div>
+  </div>
+  {% if e.photos.size > 0 %}
+  {% include gallery.html photos=e.photos title=e.title %}
+  {% if e.credit %}<p class="credit muted">{{ e.credit }}</p>{% endif %}
+  {% endif %}
+</article>
+{% endif %}
+{% endfor %}
+
+<section class="archive wrap" aria-labelledby="h-archive">
+  <h2 id="h-archive" class="h2">Selected exhibitions</h2>
+  <ol class="archive-list">
+    {% for e in all %}
+    <li id="{% unless e.featured %}{{ e.slug }}{% endunless %}">
+      <span class="a-year">{% if e.year != '' %}{{ e.year }}{% else %}·{% endif %}</span>
+      <span class="a-main"><strong>{{ e.title }}</strong>{% if e.with %} <span class="muted">— {{ e.with }}</span>{% endif %}</span>
+      <span class="a-venue">{{ e.venue }}{% if e.city != '' %}, {{ e.city }}{% endif %}</span>
+    </li>
+    {% endfor %}
+  </ol>
+
+  <h2 class="h2 awards-h">Awards</h2>
+  <ol class="archive-list">
+    {% for a in site.data.awards %}
+    <li><span class="a-year">{{ a.year }}</span><span class="a-main"><strong>{{ a.title }}</strong></span><span class="a-venue">{{ a.detail }}</span></li>
+    {% endfor %}
+  </ol>
+</section>
