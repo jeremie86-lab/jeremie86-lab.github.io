@@ -1,0 +1,26 @@
+---
+layout: default
+body_class: page-series
+---
+{% assign all_series = site.series | sort: 'order' %}
+<article class="series">
+  <header class="series-head wrap">
+    <p class="kicker">Series{% if page.year %} · {{ page.year }}{% endif %}</p>
+    <h1 class="display">{{ page.title }}</h1>
+    {% if page.subtitle %}<p class="series-sub">{{ page.subtitle }}</p>{% endif %}
+    <div class="series-text">{{ content }}</div>
+    {% assign related = site.exhibitions | where: 'related_series', page.slug %}
+    {% if related.size > 0 %}<p class="series-links">Shown in {% for e in related %}<a href="{{ '/exhibitions/' | relative_url }}#{{ e.slug }}">{{ e.title }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</p>{% endif %}
+  </header>
+  <div class="wrap wide">
+    {% include gallery.html photos=page.photos title=page.title %}
+  </div>
+  <nav class="series-pager wrap" aria-label="Other series">
+    {% for x in all_series %}{% if x.url == page.url %}
+      {% assign i = forloop.index0 %}
+      {% assign prev_i = i | minus: 1 %}{% assign next_i = i | plus: 1 %}
+      {% if prev_i >= 0 %}{% assign pv = all_series[prev_i] %}<a class="pg prev" href="{{ pv.url | relative_url }}"><span class="label">Previous</span><span class="pg-t">{{ pv.title }}</span></a>{% else %}<span></span>{% endif %}
+      {% if next_i < all_series.size %}{% assign nx = all_series[next_i] %}<a class="pg next" href="{{ nx.url | relative_url }}"><span class="label">Next</span><span class="pg-t">{{ nx.title }}</span></a>{% endif %}
+    {% endif %}{% endfor %}
+  </nav>
+</article>
