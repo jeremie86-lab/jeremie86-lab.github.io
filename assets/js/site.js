@@ -27,7 +27,7 @@
     lb.addEventListener('touchend',function(e){if(sx===null)return;var dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>50)go(dx<0?1:-1);sx=null;});
     document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')close();if(e.key==='ArrowRight')go(1);if(e.key==='ArrowLeft')go(-1);});
   }
-  function show(){var b=items[idx];img.src=b.dataset.src;img.alt=b.querySelector('img').alt;cap.textContent=b.dataset.caption||'';count.textContent=(idx+1)+' / '+items.length;
+  function show(){var b=items[idx];img.classList.add('is-loading');img.onload=function(){img.classList.remove('is-loading')};img.src=b.dataset.src;img.alt=b.querySelector('img').alt;cap.textContent=b.dataset.caption||'';count.textContent=(idx+1)+' / '+items.length;
     var n=items[(idx+1)%items.length];if(n){var p=new Image();p.src=n.dataset.src;}}
   function go(d){idx=(idx+d+items.length)%items.length;show();}
   function open(list,i){if(!lb)build();items=list;idx=i;lastFocus=document.activeElement;show();lb.hidden=false;document.body.classList.add('lb-on');lb.querySelector('.lb-close').focus();}
@@ -36,6 +36,17 @@
     var list=Array.prototype.slice.call(g.querySelectorAll('.g-open'));
     list.forEach(function(b,i){b.addEventListener('click',function(){open(list,i);});});
   });
+
+  // Soft reveal on scroll
+  var targets=document.querySelectorAll('.g-item,.card,.expo-card,.offer,.expo-grid,.archive-list li,.about-portrait');
+  if('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{rootMargin:'0px 0px -8% 0px'});
+    targets.forEach(function(el){
+      var sib=el.parentElement?Array.prototype.indexOf.call(el.parentElement.children,el):0;
+      el.style.transitionDelay=((sib%4)*70)+'ms';
+      el.classList.add('reveal');io.observe(el);
+    });
+  }
 
   // Discourage casual image saving (right-click) — not a real protection
   document.addEventListener('contextmenu',function(e){if(e.target.tagName==='IMG')e.preventDefault();});
