@@ -1,0 +1,11 @@
+{%- comment -%} Usage: {% include gallery.html photos=page.photos title=page.title %} {%- endcomment -%}
+<div class="gallery" data-gallery>
+  {% for p in include.photos %}{% if p.src %}
+  <figure class="g-item">
+    <button type="button" class="g-open" data-src="{{ p.src | relative_url }}" data-caption="{{ p.caption | escape }}" aria-label="Open image {{ forloop.index }}{% if p.caption and p.caption != '' %}: {{ p.caption | escape }}{% endif %}">
+      <img src="{{ p.src | relative_url }}" alt="{% if p.caption and p.caption != '' %}{{ p.caption | escape }}{% else %}{{ include.title | escape }}, image {{ forloop.index }}{% endif %}" loading="{% if forloop.index <= 3 %}eager{% else %}lazy{% endif %}" decoding="async">
+    </button>
+    {% if p.caption and p.caption != '' %}<figcaption>{{ p.caption }}</figcaption>{% endif %}
+  </figure>
+  {% endif %}{% endfor %}
+</div>

@@ -1,0 +1,19 @@
+{% assign s = site.data.settings %}
+<footer class="site-footer">
+  <div class="foot-grid">
+    <div>
+      <p class="foot-name">{{ s.name }}</p>
+      <p class="muted">{{ s.tagline }}</p>
+    </div>
+    <div>
+      <p class="label">Contact</p>
+      <p><a href="mailto:{{ s.email }}">{{ s.email }}</a></p>
+      <p><a href="https://www.instagram.com/{{ s.instagram }}/" rel="noopener" target="_blank">@{{ s.instagram }}</a></p>
+    </div>
+    <div>
+      <p class="label">Represented by</p>
+      <p><a href="{{ s.gallery_url }}" rel="noopener" target="_blank">{{ s.gallery_name }}</a>, Geneva</p>
+    </div>
+  </div>
+  <p class="copy muted">© {{ site.time | date: '%Y' }} {{ s.name }}. All photographs are protected by copyright and may not be reproduced without permission.</p>
+</footer>
