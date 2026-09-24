@@ -6,11 +6,13 @@ hero_kicker: "Upcoming exhibition"
 hero_title: "CROCO"
 hero_text: "Tiphaine Koltes × Jeremy Spierer. Galerie Fahid Taghavi, Geneva. Opening 19 November 2026."
 hero_link: /exhibitions/
+hero_exhibition: "2026-11-croco"   # fichier de l'expo mise en avant (dates, calendrier, plan)
 statement_title: "Jeremy Spierer is a photographer based in Geneva"
 statement: "Self-taught, working with Leica cameras and a direct flash, he photographs the body and the city with the same frankness: the naked figure pushed to pure white or swallowed by the night, torn posters, streets and faces met from Kyiv to Bangkok. His work has been exhibited in Geneva, Paris, Tel Aviv and London, and at MAZE Art Gstaad and MAZE Art St. Moritz."
 offers:
   - title: "Signed prints"
     text: "Hand-signed prints in small editions, available on request and through Galerie Fahid Taghavi."
+    link: /prints/
   - title: "Commissions"
     text: "Portraits, editorial and event photography, and artistic collaborations with brands."
   - title: "Private lessons"
@@ -20,3 +22,5 @@ instagram: "jeremyspierer"
 gallery_name: "Galerie Fahid Taghavi"
 gallery_url: "https://galeriefahidtaghavi.ch/jeremy-spierer/"
 artsy_url: "https://www.artsy.net/partner/galerie-fahid-taghavi"
+contact_form: true      # formulaire sur la page Contact (envoyé par FormSubmit vers l'adresse email ci-dessus)
+goatcounter: ""         # code GoatCounter (ex. "jeremyspierer") pour les statistiques de visite ; vide = désactivé
