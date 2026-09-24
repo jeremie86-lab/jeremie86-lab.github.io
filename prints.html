@@ -14,7 +14,7 @@ description: "Hand-signed prints and works by Jeremy Spierer, available on reque
 </section>
 
 {% if croco %}
-{% assign works = croco.photos | where_exp: 'p', "p.caption contains 'photograph' or p.caption contains 'Mixed media'" %}
+{% assign works_a = croco.photos | where_exp: 'p', "p.caption contains 'aluminium'" %}{% assign works_b = croco.photos | where_exp: 'p', "p.caption contains 'Mixed media'" %}{% assign works = works_a | concat: works_b %}
 <section class="block wrap wide" aria-labelledby="h-works">
   <div class="block-head">
     <h2 id="h-works" class="h2">CROCO works</h2>
