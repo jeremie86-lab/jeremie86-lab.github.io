@@ -6,6 +6,7 @@ city: "St. Moritz"
 dates: "26 February – 1 March 2026"
 year: "2026"
 start: 2026-02-26
+end: 2026-03-01
 kind: "Art fair"
 featured: true
 cover: /assets/img/exhibitions/maze-st-moritz/maze-st-moritz-01.jpg

@@ -6,6 +6,7 @@ city: "Gstaad"
 dates: "19 – 22 February 2026"
 year: "2026"
 start: 2026-02-19
+end: 2026-02-22
 kind: "Art fair"
 featured: true
 cover: /assets/img/exhibitions/maze-gstaad/maze-gstaad-03.jpg
