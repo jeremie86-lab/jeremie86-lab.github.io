@@ -43,6 +43,9 @@ content:
       - {name: venue, label: Venue, type: string}
       - {name: city, label: City, type: string}
       - {name: dates, label: "Dates as displayed", type: string}
+      - {name: end, label: "End date (switches Now showing to past)", type: date}
+      - {name: opening_time, label: "Opening time, e.g. 18:00 (adds Add to calendar)", type: string}
+      - {name: address, label: "Street address (adds a Map link)", type: string}
       - {name: year, label: Year, type: string}
       - {name: start, label: "Start date (used for sorting)", type: date}
       - {name: featured, label: "Show large, with photos", type: boolean}
@@ -70,6 +73,7 @@ content:
       - {name: hero_title, label: Big title, type: string}
       - {name: hero_text, label: Text under the big title, type: text}
       - {name: hero_link, label: Button link, type: string}
+      - {name: hero_exhibition, label: "Exhibition shown on the home page (file name, e.g. 2026-11-croco)", type: string}
       - {name: statement_title, label: Statement title, type: string}
       - {name: statement, label: Statement, type: text}
       - name: offers
@@ -79,11 +83,14 @@ content:
         fields:
           - {name: title, label: Title, type: string}
           - {name: text, label: Text, type: text}
+          - {name: link, label: "Link (optional, e.g. /prints/)", type: string}
       - {name: email, label: Email, type: string}
       - {name: instagram, label: Instagram username, type: string}
       - {name: gallery_name, label: Gallery name, type: string}
       - {name: gallery_url, label: Gallery page, type: string}
       - {name: artsy_url, label: Artsy page, type: string}
+      - {name: contact_form, label: Show the contact form, type: boolean}
+      - {name: goatcounter, label: "GoatCounter code (visitor statistics)", type: string}
   - name: awards
     label: Awards
     type: file

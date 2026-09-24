@@ -1,6 +1,6 @@
 title: "Jeremy Spierer"
 description: "Jeremy Spierer, photographer based in Geneva. Series, exhibitions and contact."
-url: ""        # ex. https://www.jeremyspierer.com une fois le domaine branché
+url: "https://jeremie86-lab.github.io"   # à remplacer par https://www.jeremyspierer.com une fois le domaine branché
 baseurl: ""    # laisser vide pour un site <utilisateur>.github.io ou un domaine perso
 lang: en
 markdown: kramdown
@@ -14,4 +14,5 @@ collections:
 defaults:
   - scope: {path: "", type: series}
     values: {layout: series}
+plugins: [jekyll-sitemap]
 exclude: [README.md, site_images.json, "*.tar", .pages.yml, Gemfile, Gemfile.lock, vendor]

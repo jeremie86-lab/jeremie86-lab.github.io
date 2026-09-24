@@ -6,14 +6,16 @@ body_class: page-home
 {% assign s = site.data.settings %}
 {% assign all_series = site.series | sort: 'order' %}
 {% assign expos = site.exhibitions | where: 'featured', true | sort: 'start' | reverse %}
+{% assign hx = site.exhibitions | where: 'slug', s.hero_exhibition | first %}
 
 <section class="hero">
   <div class="hero-bg" style="background-image: url('{{ s.hero_image | relative_url }}')" aria-hidden="true"></div>
   <div class="hero-inner wrap">
-    <p class="kicker">{{ s.hero_kicker }}</p>
+    <p class="kicker"{% if hx %} data-start="{{ hx.start | date: '%Y-%m-%d' }}" data-end="{% if hx.end and hx.end != '' %}{{ hx.end | date: '%Y-%m-%d' }}{% endif %}" data-before="{{ s.hero_kicker }}" data-during="Now showing" data-after="Recent exhibition"{% endif %}>{{ s.hero_kicker }}</p>
     <h1 class="display hero-title">{{ s.hero_title }}</h1>
     <p class="hero-text">{{ s.hero_text }}</p>
     <a class="btn" href="{{ s.hero_link | relative_url }}">See the exhibition</a>
+    {% include visit-links.html e=hx %}
   </div>
 </section>
 
@@ -44,6 +46,7 @@ body_class: page-home
   <div class="offer">
     <h3 class="h3">{{ o.title }}</h3>
     <p>{{ o.text }}</p>
+    {% if o.link and o.link != '' %}<a class="more" href="{{ o.link | relative_url }}">Find out more</a>{% endif %}
   </div>
   {% endfor %}
 </section>

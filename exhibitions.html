@@ -15,10 +15,12 @@ permalink: /exhibitions/
   <div class="expo-grid">
     {% if e.cover %}<figure class="expo-cover"><img src="{{ e.cover | relative_url }}" alt="{{ e.title | escape }}" loading="{% if forloop.first %}eager{% else %}lazy{% endif %}" decoding="async"></figure>{% endif %}
     <div class="expo-body">
-      <p class="kicker">{% if d >= today %}Upcoming · {% endif %}{{ e.kind }}</p>
+      {% capture endd %}{% if e.end and e.end != '' %}{{ e.end | date: '%Y-%m-%d' }}{% endif %}{% endcapture %}
+      <p class="kicker" data-start="{{ d }}" data-end="{{ endd }}" data-before="Upcoming · {{ e.kind }}" data-during="Now showing · {{ e.kind }}" data-after="{{ e.kind }}">{% if d > today %}Upcoming · {% endif %}{{ e.kind }}</p>
       <h2 class="display expo-title">{{ e.title }}</h2>
       {% if e.with %}<p class="expo-with">{{ e.with }}</p>{% endif %}
       <p class="expo-meta">{{ e.venue }}{% if e.city != '' %}, {{ e.city }}{% endif %}<br>{{ e.dates }}</p>
+      {% include visit-links.html e=e %}
       <div class="prose">{{ e.content | markdownify }}</div>
       <p class="expo-links">
         {% if e.related_series %}{% assign rs = site.series | where: 'slug', e.related_series | first %}{% if rs %}<a class="more" href="{{ rs.url | relative_url }}">See the series {{ rs.title }}</a>{% endif %}{% endif %}

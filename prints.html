@@ -1,0 +1,51 @@
+---
+layout: default
+title: Prints
+permalink: /prints/
+description: "Hand-signed prints and works by Jeremy Spierer, available on request and through Galerie Fahid Taghavi, Geneva."
+---
+{% assign s = site.data.settings %}
+{% assign croco = site.series | where: 'slug', 'croco' | first %}
+{% assign others = site.series | where_exp: 'x', "x.slug != 'croco'" | sort: 'order' %}
+{% assign ce = site.exhibitions | where: 'slug', s.hero_exhibition | first %}
+<section class="page-head wrap">
+  <h1 class="display">Prints</h1>
+  <p class="lead">Hand-signed prints in small editions, available on request and through <a href="{{ s.gallery_url }}" rel="noopener" target="_blank">{{ s.gallery_name }}</a>. Prices, formats and editions on request.</p>
+</section>
+
+{% if croco %}
+{% assign works = croco.photos | where_exp: 'p', "p.caption contains 'photograph' or p.caption contains 'Mixed media'" %}
+<section class="block wrap wide" aria-labelledby="h-works">
+  <div class="block-head">
+    <h2 id="h-works" class="h2">CROCO works</h2>
+    <a class="more" href="{{ croco.url | relative_url }}">See the series</a>
+  </div>
+  <p class="section-note">Collaborative works with the painter Tiphaine Koltes{% if ce %}, shown in <a href="{{ '/exhibitions/' | relative_url }}#{{ ce.slug }}">CROCO</a> at {{ ce.venue }}{% endif %}. Works are available for purchase ahead of the opening. Reservations are taken on a first-come, first-served basis and confirmed in writing.</p>
+  {% include gallery.html photos=works title='CROCO' %}
+</section>
+{% endif %}
+
+<section class="block wrap wide" aria-labelledby="h-prints">
+  <div class="block-head">
+    <h2 id="h-prints" class="h2">Prints from the series</h2>
+  </div>
+  <div class="cards cards-lg">
+    {% for x in others %}
+    <a class="card" href="{{ x.url | relative_url }}">
+      <img src="{{ x.cover | default: x.photos[0].src | relative_url }}" alt="" loading="lazy" decoding="async">
+      <span class="card-t">{{ x.title }}</span>
+      {% if x.subtitle %}<span class="card-s">{{ x.subtitle }}</span>{% endif %}
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="steps wrap" aria-labelledby="h-how">
+  <h2 id="h-how" class="h2">How to enquire</h2>
+  <ol class="steps-list">
+    <li><strong>Choose a photograph.</strong> Note the series and the image number shown in the viewer.</li>
+    <li><strong>Write to me.</strong> Tell me the size you have in mind and where you are based.</li>
+    <li><strong>I reply</strong> with available formats, edition details and price.</li>
+  </ol>
+  <a class="btn" href="{{ '/contact/' | relative_url }}?subject=Print">Enquire about a print</a>
+</section>
