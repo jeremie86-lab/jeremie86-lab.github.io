@@ -48,6 +48,24 @@
     });
   }
 
+  // Date-aware labels and links, computed in Geneva time so the site updates itself
+  var today=(function(){try{return new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Zurich',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());}catch(e){return new Date().toISOString().slice(0,10);}})();
+  document.querySelectorAll('[data-start]').forEach(function(el){
+    var s=el.getAttribute('data-start'),e=el.getAttribute('data-end');if(!s)return;
+    var k=today<s?'before':(e&&today>e?'after':'during');var t=el.getAttribute('data-'+k);if(t)el.textContent=t;
+  });
+  document.querySelectorAll('[data-hide-after]').forEach(function(el){if(today>el.getAttribute('data-hide-after'))el.hidden=true;});
+
+  // Contact form: confirmation message, topic from ?subject=, email subject and reply-to
+  var f=document.querySelector('[data-contact-form]');
+  if(f){
+    var q=new URLSearchParams(location.search);
+    if(q.get('sent')){var ok=document.querySelector('[data-form-sent]');if(ok){ok.hidden=false;f.hidden=true;}}
+    var tp=f.querySelector('[data-topic]'),out=f.querySelector('[data-subject-out]'),em=f.querySelector('[data-email]'),rt=f.querySelector('[data-replyto]');
+    var want=q.get('subject');if(want&&tp){Array.prototype.forEach.call(tp.options,function(o){if(o.value===want)tp.value=want;});}
+    f.addEventListener('submit',function(){if(out&&tp)out.value='Website enquiry: '+tp.value;if(rt&&em)rt.value=em.value;});
+  }
+
   // Discourage casual image saving (right-click) — not a real protection
   document.addEventListener('contextmenu',function(e){if(e.target.tagName==='IMG')e.preventDefault();});
 })();
