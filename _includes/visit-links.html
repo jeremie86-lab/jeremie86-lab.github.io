@@ -1,0 +1,18 @@
+{%- comment -%} Usage: {% include visit-links.html e=exhibition %} : calendar links (hidden once the opening day has passed) and a map link {%- endcomment -%}
+{%- assign e = include.e -%}
+{%- if e -%}{%- if e.address and e.address != '' or e.opening_time and e.opening_time != '' -%}
+{%- capture gstart %}{{ e.start | date: '%Y%m%d' }}T{{ e.opening_time | remove: ':' }}00{% endcapture -%}
+{%- capture gtitle %}{{ e.title }} · Opening{% endcapture -%}
+{%- capture gloc %}{{ e.venue }}, {{ e.address }}{% endcapture -%}
+<p class="visit-links">
+  {%- if e.opening_time and e.opening_time != '' -%}
+  <span class="vl-cal" data-hide-after="{{ e.start | date: '%Y-%m-%d' }}">
+    <a href="{{ '/openings.ics' | relative_url }}">Add to calendar</a>
+    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text={{ gtitle | url_encode }}&amp;dates={{ gstart }}/{{ gstart }}&amp;ctz=Europe/Zurich&amp;location={{ gloc | url_encode }}&amp;details={{ e.dates | url_encode }}" rel="noopener" target="_blank">Google Calendar</a>
+  </span>
+  {%- endif -%}
+  {%- if e.address and e.address != '' %}
+  <a href="https://www.google.com/maps/search/?api=1&amp;query={{ gloc | url_encode }}" rel="noopener" target="_blank">Map</a>
+  {%- endif %}
+</p>
+{%- endif -%}{%- endif -%}
