@@ -4,8 +4,8 @@ with: "Jeremy Spierer & Eliran Ashraf"
 venue: "Le Bal des Créateurs"
 city: ""
 dates: ""
-year: ""
-start: 2015-01-01
+year: "2014"
+start: 2014-01-01
 kind: "Duo exhibition"
 featured: false
 cover: /assets/img/exhibitions/urban-decay/urban-decay-01.jpg
