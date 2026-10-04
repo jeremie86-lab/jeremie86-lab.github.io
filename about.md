@@ -14,13 +14,15 @@ portrait_caption: "Jeremy Spierer in the studio, 2026"
     <h1 class="display">About</h1>
     <div class="prose" markdown="1">
 
-Born in Geneva in 1986, Jeremy Spierer is a lawyer by training and a self-taught photographer. He took up photography seriously in 2011, in the streets and working-class districts of large cities.
+Born in Geneva in 1986, Jeremy Spierer is a self-taught photographer. Since 2011, in the street as in the studio, he has been after one thing: a way back to instinct.
 
-His family's history of migration, from several countries of Eastern Europe, runs through his eye: displacement, memory, the search for belonging. His travels, from South America to Ukraine by way of France and Italy, feed series that speak of the fragility and the splendour of the world. His series on the nude, from which several works in CROCO are drawn, sees the female body as a temple, on the edge of the earthly and the sacred.
+His work starts from the pull of what is not meant to be seen, and from a refusal to pretend otherwise. There is something of the voyeur in him; rather than hide it, he takes responsibility for it. The direct flash is that gesture: nothing softened, nothing made pretty, and the one who looks standing inside the scene rather than behind it.
 
-He works with Leica cameras, often with a direct flash, and has taught at the Leica Akademie Switzerland. Alongside his personal work he collaborates with brands, and edited *Backstage*, a magazine from the 2018 and 2019 Cannes Film Festivals.
+He approaches the people he photographs as one approaches something wild, knowing he will not have the last word. In the end, it is she who wins. She looks back, and whoever came to watch finds themselves watched, and challenged. Between desire and the forbidden, his photographs ask what is left once we stop pretending not to look.
 
-He held his first solo exhibition in Geneva in 2013, at Galerie Fahid Taghavi, and has since shown in Paris, Tel Aviv and London. He received the Photo Democracy Award (selected by Steve McCurry) and first prize at the Prix de la Photographie Paris (PX3).
+The street is the same territory and the same chase. He counts Daido Moriyama and Nobuyoshi Araki among his influences, and has no use for smooth glamour or beauty for its own sake.
+
+He works with Leica cameras and has taught at the Leica Akademie Switzerland. He edited *Backstage*, a magazine from the 2018 and 2019 Cannes Film Festivals. After his first solo exhibition at Galerie Fahid Taghavi in Geneva in 2013, he showed in Paris, Tel Aviv and London, then at MAZE Art Gstaad and MAZE Art St. Moritz in 2026. *CROCO*, a duo exhibition with the painter Tiphaine Koltes, opens at Galerie Fahid Taghavi in November 2026. He received the Photo Democracy Award (selected by Steve McCurry) and first prize at the Prix de la Photographie Paris (PX3).
 
 </div>
     <section class="cv" aria-labelledby="h-cv">
