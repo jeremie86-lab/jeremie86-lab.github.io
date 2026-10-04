@@ -12,19 +12,29 @@ portrait_caption: "Jeremy Spierer in the studio, 2026"
   </figure>
   <div class="about-text">
     <h1 class="display">About</h1>
-    <div class="prose" markdown="1">
+    <section class="artist-statement" aria-labelledby="h-statement">
+      <h2 id="h-statement" class="label">Statement</h2>
+      <div class="statement-body" markdown="1">
 
-Born in Geneva in 1986, Jeremy Spierer is a self-taught photographer. Since 2011, in the street as in the studio, he has been after one thing: a way back to instinct.
+Since childhood, my eyes have lingered on what I was not supposed to see. I never stopped looking; I only stopped hiding.
 
-His work starts from the pull of what is not meant to be seen, and from a refusal to pretend otherwise. There is something of the voyeur in him; rather than hide it, he takes responsibility for it. The direct flash is that gesture: nothing softened, nothing made pretty, and the one who looks standing inside the scene rather than behind it.
+My flash is a confession. It writes me into the scene and tears from the moment what the eye lets slip: skin without artifice, a gesture tipping over, instinct rising to the surface. From burnt-out white to total black, I am not after the beautiful picture, but the emotion that makes me press the shutter.
 
-He approaches the people he photographs as one approaches something wild, knowing he will not have the last word. In the end, it is she who wins. She looks back, and whoever came to watch finds themselves watched, and challenged. Between desire and the forbidden, his photographs ask what is left once we stop pretending not to look.
-
-The street is the same territory and the same chase. He counts Daido Moriyama and Nobuyoshi Araki among his influences, and has no use for smooth glamour or beauty for its own sake.
-
-He works with Leica cameras and has taught at the Leica Akademie Switzerland. He edited *Backstage*, a magazine from the 2018 and 2019 Cannes Film Festivals. After his first solo exhibition at Galerie Fahid Taghavi in Geneva in 2013, he showed in Paris, Tel Aviv and London, then at MAZE Art Gstaad and MAZE Art St. Moritz in 2026. *CROCO*, a duo exhibition with the painter Tiphaine Koltes, opens at Galerie Fahid Taghavi in November 2026. He received the Photo Democracy Award (selected by Steve McCurry) and first prize at the Prix de la Photographie Paris (PX3).
+In the street, I go unseen. In the studio, I face something wild. It is the same chase, and she always has the last word: she looks me in the eye, then she looks at you. In front of my pictures, you are the one caught in *flagrant délit*.
 
 </div>
+      <p class="statement-sign">Jeremy Spierer</p>
+    </section>
+    <section class="bio" aria-labelledby="h-bio">
+      <h2 id="h-bio" class="label">Biography</h2>
+      <div class="prose" markdown="1">
+
+Born in Geneva in 1986, Jeremy Spierer is a self-taught photographer. Since 2011 he has worked in the street and in the studio, with Leica cameras and a direct flash. He counts Daido Moriyama and Nobuyoshi Araki among his influences.
+
+He has taught at the Leica Akademie Switzerland and edited *Backstage*, a magazine from the 2018 and 2019 Cannes Film Festivals. After his first solo exhibition at Galerie Fahid Taghavi in Geneva in 2013, he showed in Paris, Tel Aviv and London, then at MAZE Art Gstaad and MAZE Art St. Moritz in 2026. *CROCO*, a duo exhibition with the painter Tiphaine Koltes, opens at Galerie Fahid Taghavi in November 2026. He received the Photo Democracy Award (selected by Steve McCurry) and first prize at the Prix de la Photographie Paris (PX3).
+
+</div>
+    </section>
     <section class="cv" aria-labelledby="h-cv">
       <h2 id="h-cv" class="h2">CV</h2>
       <h3 class="label">Selected exhibitions</h3>
