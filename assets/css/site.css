@@ -156,6 +156,13 @@ a{color:inherit;text-decoration-color:color-mix(in srgb,currentColor 40%,transpa
 .about-portrait figcaption{font-size:13px;margin-top:8px}
 .about-text .display{font-size:clamp(52px,8vw,120px);margin-bottom:30px}
 .about-text .prose{font-size:18px}
+.artist-statement{margin:0 0 clamp(48px,6vw,80px)}
+.artist-statement .label,.bio .label{margin:0 0 18px}
+.statement-body{font-size:clamp(19px,1.7vw,23px);line-height:1.55;color:var(--ink);max-width:34em}
+.statement-body p{margin:0 0 1em}
+.statement-sign{margin:4px 0 0;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+.statement-sign::before{content:"";display:inline-block;width:28px;height:1px;background:var(--red);vertical-align:middle;margin-right:12px}
+.bio{margin:0 0 clamp(40px,5vw,64px)}
 .about-links{margin-top:30px}
 @media (max-width:860px){.about{grid-template-columns:1fr}.about-portrait{position:static;max-width:520px}}
 .contact{padding-block:clamp(56px,8vw,110px)}
