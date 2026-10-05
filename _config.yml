@@ -1,6 +1,6 @@
 title: "Jeremy Spierer"
 description: "Jeremy Spierer, photographer based in Geneva. Series, exhibitions and contact."
-url: "https://jeremie86-lab.github.io"   # à remplacer par https://www.jeremyspierer.com une fois le domaine branché
+url: "https://jeremyspierer.com"
 baseurl: ""    # laisser vide pour un site <utilisateur>.github.io ou un domaine perso
 lang: en
 markdown: kramdown
