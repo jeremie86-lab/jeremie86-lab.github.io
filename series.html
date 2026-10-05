@@ -20,15 +20,6 @@ permalink: /series/
     {% endfor %}
   </div>
   {% if archive_series.size > 0 %}
-  <h2 class="h2 archive-h">Archive</h2>
-  <div class="cards cards-lg cards-archive">
-    {% for x in archive_series %}
-    <a class="card" href="{{ x.url | relative_url }}">
-      <img src="{{ x.cover | default: x.photos[0].src | relative_url }}" alt="" loading="lazy" decoding="async">
-      <span class="card-t">{{ x.title }}</span>
-      {% if x.subtitle %}<span class="card-s">{{ x.subtitle }}</span>{% endif %}
-    </a>
-    {% endfor %}
-  </div>
+  <p class="archive-link"><a class="more" href="{{ '/archive/' | relative_url }}">Archive · {{ archive_series.size }} earlier series</a></p>
   {% endif %}
 </div>

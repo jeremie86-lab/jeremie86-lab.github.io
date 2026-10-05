@@ -1,0 +1,21 @@
+---
+layout: default
+title: Archive
+permalink: /archive/
+---
+{% assign archive_series = site.series | where: 'archive', true | sort: 'order' %}
+<section class="page-head wrap">
+  <h1 class="display">Archive</h1>
+  <p class="lead archive-lead">Earlier series: travels, the street and the city, before and alongside the current work.</p>
+</section>
+<div class="wrap wide">
+  <div class="cards">
+    {% for x in archive_series %}
+    <a class="card" href="{{ x.url | relative_url }}">
+      <img src="{{ x.cover | default: x.photos[0].src | relative_url }}" alt="" loading="lazy" decoding="async">
+      <span class="card-t">{{ x.title }}</span>
+      {% if x.subtitle and x.subtitle != '' %}<span class="card-s">{{ x.subtitle }}</span>{% endif %}
+    </a>
+    {% endfor %}
+  </div>
+</div>
