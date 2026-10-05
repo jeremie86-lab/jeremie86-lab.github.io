@@ -17,15 +17,21 @@ photos:
     caption: ""
   - src: /assets/img/israel/israel-07.jpg
     caption: ""
+  - src: /assets/img/israel/israel-08.jpg
+    caption: ""
   - src: /assets/img/israel/israel-09.jpg
     caption: ""
   - src: /assets/img/israel/israel-10.jpg
+    caption: ""
+  - src: /assets/img/israel/israel-11.jpg
     caption: ""
   - src: /assets/img/israel/israel-12.jpg
     caption: ""
   - src: /assets/img/israel/israel-13.jpg
     caption: ""
   - src: /assets/img/israel/israel-14.jpg
+    caption: ""
+  - src: /assets/img/israel/israel-15.jpg
     caption: ""
   - src: /assets/img/israel/israel-16.jpg
     caption: ""
@@ -52,6 +58,8 @@ photos:
   - src: /assets/img/israel/israel-27.jpg
     caption: ""
   - src: /assets/img/israel/israel-28.jpg
+    caption: ""
+  - src: /assets/img/israel/israel-29.jpg
     caption: ""
   - src: /assets/img/israel/israel-30.jpg
     caption: ""
@@ -86,6 +94,8 @@ photos:
   - src: /assets/img/israel/israel-45.jpg
     caption: ""
   - src: /assets/img/israel/israel-46.jpg
+    caption: ""
+  - src: /assets/img/israel/israel-47.jpg
     caption: ""
   - src: /assets/img/israel/israel-48.jpg
     caption: ""

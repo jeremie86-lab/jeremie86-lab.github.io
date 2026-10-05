@@ -11,6 +11,8 @@ photos:
     caption: ""
   - src: /assets/img/istanbul/istanbul-03.jpg
     caption: ""
+  - src: /assets/img/istanbul/istanbul-04.jpg
+    caption: ""
   - src: /assets/img/istanbul/istanbul-05.jpg
     caption: ""
   - src: /assets/img/istanbul/istanbul-06.jpg
@@ -21,7 +23,11 @@ photos:
     caption: ""
   - src: /assets/img/istanbul/istanbul-09.jpg
     caption: ""
+  - src: /assets/img/istanbul/istanbul-10.jpg
+    caption: ""
   - src: /assets/img/istanbul/istanbul-11.jpg
+    caption: ""
+  - src: /assets/img/istanbul/istanbul-12.jpg
     caption: ""
   - src: /assets/img/istanbul/istanbul-13.jpg
     caption: ""
@@ -32,6 +38,8 @@ photos:
   - src: /assets/img/istanbul/istanbul-16.jpg
     caption: ""
   - src: /assets/img/istanbul/istanbul-17.jpg
+    caption: ""
+  - src: /assets/img/istanbul/istanbul-18.jpg
     caption: ""
   - src: /assets/img/istanbul/istanbul-19.jpg
     caption: ""

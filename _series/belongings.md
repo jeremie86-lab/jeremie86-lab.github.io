@@ -1,5 +1,6 @@
 ---
 title: "Belongings"
+published: false
 subtitle: "Streets of Kyiv, Istanbul, Jerusalem, Tel Aviv, Bangkok"
 order: 8
 cover: /assets/img/belongings/belongings-04.jpg
