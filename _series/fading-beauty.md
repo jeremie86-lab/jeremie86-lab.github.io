@@ -1,7 +1,7 @@
 ---
 title: "Fading Beauty"
 subtitle: "Urban decay"
-order: 5
+order: 10
 cover: /assets/img/fading-beauty/fading-beauty-06.jpg
 photos:
   - src: /assets/img/fading-beauty/fading-beauty-01.jpg
@@ -48,6 +48,7 @@ photos:
     caption: ""
   - src: /assets/img/fading-beauty/fading-beauty-22.jpg
     caption: ""
+archive: true
 ---
 
 Beauty images in a damaged state, worn down by their street life. Torn posters from Geneva, Tel Aviv, Kyiv, Barcelona and New York become symbols of fading beauty, in a rather ironic way. The city writes over itself; the photographer only frames the aesthetic of damage. First shown as Urban Decay, in dialogue with textile designer Eliran Ashraf.

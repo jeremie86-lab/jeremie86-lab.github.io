@@ -1,7 +1,7 @@
 ---
 title: "Afterimage"
 subtitle: "Bodies in motion"
-order: 4
+order: 6
 cover: /assets/img/afterimage/afterimage-04.jpg
 photos:
   - src: /assets/img/afterimage/afterimage-01.jpg

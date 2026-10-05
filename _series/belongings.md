@@ -1,7 +1,7 @@
 ---
 title: "Belongings"
 subtitle: "Streets of Kyiv, Istanbul, Jerusalem, Tel Aviv, Bangkok"
-order: 7
+order: 8
 cover: /assets/img/belongings/belongings-04.jpg
 photos:
   - src: /assets/img/belongings/belongings-01.jpg
@@ -54,6 +54,7 @@ photos:
     caption: ""
   - src: /assets/img/belongings/belongings-25.jpg
     caption: ""
+archive: true
 ---
 
-Faces met in the street, never staged. Kyiv in the snow, Istanbul, Jerusalem, Tel Aviv, Bangkok. A family history of migration from several countries of Eastern Europe runs through these pictures: displacement, memory, the search for belonging.
+Faces met in the street, never staged. Kyiv in the snow, Istanbul, Jerusalem, Tel Aviv, Bangkok.

@@ -1,7 +1,7 @@
 ---
 title: "Dazzle"
 subtitle: "Nudes in white"
-order: 2
+order: 5
 cover: /assets/img/dazzle/dazzle-04.jpg
 photos:
   - src: /assets/img/dazzle/dazzle-01.jpg

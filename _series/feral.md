@@ -1,7 +1,7 @@
 ---
 title: "Feral"
 subtitle: "Night flash"
-order: 3
+order: 7
 cover: /assets/img/feral/feral-08.jpg
 photos:
   - src: /assets/img/feral/feral-01.jpg

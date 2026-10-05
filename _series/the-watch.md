@@ -1,7 +1,7 @@
 ---
 title: "The Watch"
 subtitle: "Geneva, from above and after dark"
-order: 6
+order: 9
 cover: /assets/img/the-watch/the-watch-13.jpg
 photos:
   - src: /assets/img/the-watch/the-watch-01.jpg
@@ -48,6 +48,7 @@ photos:
     caption: ""
   - src: /assets/img/the-watch/the-watch-22.jpg
     caption: ""
+archive: true
 ---
 
 Geneva seen from a window and from the night: silhouettes, umbrellas, trampled snow, crows on a streetlamp, foliage turned hard by the flash. A watcher looking at the city without going down into it.
