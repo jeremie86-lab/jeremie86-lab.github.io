@@ -1,4 +1,4 @@
-{% assign s = site.data.settings %}{% assign all_series = site.series | sort: 'order' %}
+{% assign s = site.data.settings %}{% assign all_series = site.series | sort: 'order' | where_exp: 'x', 'x.archive != true' %}
 <header class="site-header" data-header>
   <a class="brand" href="{{ '/' | relative_url }}">{{ s.name }}<span class="brand-dot" aria-hidden="true">.</span></a>
   <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
@@ -6,11 +6,12 @@
   </button>
   <nav id="site-nav" class="site-nav" aria-label="Main">
     <div class="has-sub">
-      <a href="{{ '/series/' | relative_url }}" class="{% if page.url contains '/series/' %}is-active{% endif %}">Series</a>
+      <a href="{{ '/series/' | relative_url }}" class="{% if page.url contains '/series/' and page.archive != true %}is-active{% endif %}">Series</a>
       <ul class="sub">
         {% for x in all_series %}<li><a href="{{ x.url | relative_url }}">{{ x.title }}</a></li>{% endfor %}
       </ul>
     </div>
+    <a href="{{ '/archive/' | relative_url }}" class="{% if page.url contains '/archive/' or page.archive == true %}is-active{% endif %}">Archive</a>
     <a href="{{ '/exhibitions/' | relative_url }}" class="{% if page.url contains '/exhibitions/' %}is-active{% endif %}">Exhibitions</a>
     <a href="{{ '/prints/' | relative_url }}" class="{% if page.url contains '/prints/' %}is-active{% endif %}">Prints</a>
     <a href="{{ '/about/' | relative_url }}" class="{% if page.url contains '/about/' %}is-active{% endif %}">About</a>
