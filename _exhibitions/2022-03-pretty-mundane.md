@@ -8,6 +8,7 @@ year: "2022"
 start: 2022-03-03
 kind: "Duo exhibition"
 featured: false
+related_series: pretty-mundane
 link: "https://galeriefahidtaghavi.ch/tanya-molskaya-jeremy-spierer/"
 photos: []
 ---
