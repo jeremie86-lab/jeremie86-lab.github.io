@@ -19,6 +19,8 @@ content:
       - {name: order, label: "Order on the site (1 = first)", type: number}
       - {name: year, label: Year, type: string}
       - {name: cover, label: Cover image (home page card), type: image}
+      - {name: diptychs, label: "Show as diptychs (photos read in pairs: 1+2, 3+4…)", type: boolean}
+      - {name: archive, label: "Archive (hidden from the home page, listed under Archive)", type: boolean}
       - name: photos
         label: Photos (drag to reorder)
         type: object

@@ -8,8 +8,10 @@ permalink: /series/
   <h1 class="display">Series</h1>
 </section>
 <div class="wrap wide">
+  {% assign main_series = all_series | where_exp: 'x', 'x.archive != true' %}
+  {% assign archive_series = all_series | where: 'archive', true %}
   <div class="cards">
-    {% for x in all_series %}
+    {% for x in main_series %}
     <a class="card" href="{{ x.url | relative_url }}">
       <img src="{{ x.cover | default: x.photos[0].src | relative_url }}" alt="" loading="lazy" decoding="async">
       <span class="card-t">{{ x.title }}</span>
@@ -17,4 +19,16 @@ permalink: /series/
     </a>
     {% endfor %}
   </div>
+  {% if archive_series.size > 0 %}
+  <h2 class="h2 archive-h">Archive</h2>
+  <div class="cards cards-lg cards-archive">
+    {% for x in archive_series %}
+    <a class="card" href="{{ x.url | relative_url }}">
+      <img src="{{ x.cover | default: x.photos[0].src | relative_url }}" alt="" loading="lazy" decoding="async">
+      <span class="card-t">{{ x.title }}</span>
+      {% if x.subtitle %}<span class="card-s">{{ x.subtitle }}</span>{% endif %}
+    </a>
+    {% endfor %}
+  </div>
+  {% endif %}
 </div>

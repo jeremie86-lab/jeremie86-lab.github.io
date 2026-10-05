@@ -4,7 +4,7 @@ title: Home
 body_class: page-home
 ---
 {% assign s = site.data.settings %}
-{% assign all_series = site.series | sort: 'order' %}
+{% assign all_series = site.series | sort: 'order' | where_exp: 'x', 'x.archive != true' %}
 {% assign expos = site.exhibitions | where: 'featured', true | sort: 'start' | reverse %}
 {% assign hx = site.exhibitions | where: 'slug', s.hero_exhibition | first %}
 
