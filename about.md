@@ -31,7 +31,7 @@ In the street, I go unseen. In the studio, I face something wild. It is the same
 
 Born in Geneva in 1986, Jeremy Spierer is a self-taught photographer. Since 2011 he has worked in the street and in the studio, with Leica cameras and a direct flash. He counts Daido Moriyama and Nobuyoshi Araki among his influences.
 
-He taught at the Leica Akademie Switzerland in 2019 and 2020 and has since mentored photographers privately. He edited *Backstage*, a magazine from the 2018 and 2019 Cannes Film Festivals. After his first solo exhibition at Galerie Fahid Taghavi in Geneva in 2013, he showed in Paris, Tel Aviv and London, then at MAZE Art Gstaad and MAZE Art St. Moritz in 2026. *CROCO*, a duo exhibition with the painter Tiphaine Koltes, opens at Galerie Fahid Taghavi in November 2026. He received the Photo Democracy Award (selected by Steve McCurry) and first prize at the Prix de la Photographie Paris (PX3).
+He taught at the Leica Akademie Switzerland in 2019 and 2020 and has since mentored photographers privately. Two chapters of the book *Inspiration Leica Akademie* (Heidi and Robert Mertens, 2020) are devoted to his work. He edited *Backstage*, a magazine from the 2018 and 2019 Cannes Film Festivals. After his first solo exhibition at Galerie Fahid Taghavi in Geneva in 2013, he showed in Paris, Tel Aviv and London, then at MAZE Art Gstaad and MAZE Art St. Moritz in 2026. *CROCO*, a duo exhibition with the painter Tiphaine Koltes, opens at Galerie Fahid Taghavi in November 2026. He received the Photo Democracy Award (selected by Steve McCurry) and first prize at the Prix de la Photographie Paris (PX3).
 
 </div>
     </section>
@@ -50,7 +50,7 @@ He taught at the Leica Akademie Switzerland in 2019 and 2020 and has since mento
       <h3 class="label">Teaching</h3>
       <ol class="archive-list"><li><span class="a-year">2020–</span><span class="a-main"><strong>Private mentoring</strong></span><span class="a-venue">One-to-one lessons</span></li><li><span class="a-year">2019–20</span><span class="a-main"><strong>Leica Akademie Switzerland</strong></span><span class="a-venue">Photography courses</span></li></ol>
       <h3 class="label">Publications</h3>
-      <ol class="archive-list"><li><span class="a-year">2018–19</span><span class="a-main"><strong><em>Backstage</em></strong> <span class="muted">— editor</span></span><span class="a-venue">Magazine, Cannes Film Festival</span></li></ol>
+      <ol class="archive-list"><li><span class="a-year">2020</span><span class="a-main"><strong><em>Inspiration Leica Akademie</em></strong> <span class="muted">— two chapters</span></span><span class="a-venue">Book by Heidi and Robert Mertens</span></li><li><span class="a-year">2018–19</span><span class="a-main"><strong><em>Backstage</em></strong> <span class="muted">— editor</span></span><span class="a-venue">Magazine, Cannes Film Festival</span></li></ol>
     </section>
     <p class="about-links"><a class="more" href="{{ '/exhibitions/' | relative_url }}">Exhibitions and awards</a> <a class="more" href="{{ site.data.settings.artsy_url }}" rel="noopener" target="_blank">Works on Artsy</a></p>
   </div>
