@@ -1,6 +1,7 @@
 ---
-title: "Dazzle"
-subtitle: "Nudes in white"
+title: "Whisper"
+subtitle: "What the light lets slip"
+permalink: /series/whisper/
 order: 5
 cover: /assets/img/dazzle/dazzle-04.jpg
 photos:
