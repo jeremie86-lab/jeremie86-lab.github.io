@@ -5,7 +5,7 @@ body_class: page-series
 {% assign all_series = site.series | sort: 'order' %}
 <article class="series">
   <header class="series-head wrap">
-    <p class="kicker">Series{% if page.year %} · {{ page.year }}{% endif %}</p>
+    <p class="kicker">{% if page.archive %}<a href="{{ '/archive/' | relative_url }}">Archive</a>{% else %}Series{% endif %}{% if page.year %} · {{ page.year }}{% endif %}</p>
     <h1 class="display">{{ page.title }}</h1>
     {% if page.subtitle %}<p class="series-sub">{{ page.subtitle }}</p>{% endif %}
     <div class="series-text">{{ content }}</div>
