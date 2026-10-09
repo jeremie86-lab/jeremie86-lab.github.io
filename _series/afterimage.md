@@ -2,19 +2,13 @@
 title: "Afterimage"
 subtitle: "Bodies in motion"
 order: 6
-cover: /assets/img/afterimage/afterimage-04.jpg
+cover: /assets/img/afterimage/afterimage-02.jpg
 photos:
   - src: /assets/img/afterimage/afterimage-01.jpg
     caption: ""
   - src: /assets/img/afterimage/afterimage-02.jpg
     caption: ""
   - src: /assets/img/afterimage/afterimage-03.jpg
-    caption: ""
-  - src: /assets/img/afterimage/afterimage-04.jpg
-    caption: ""
-  - src: /assets/img/afterimage/afterimage-05.jpg
-    caption: ""
-  - src: /assets/img/afterimage/afterimage-06.jpg
     caption: ""
   - src: /assets/img/afterimage/afterimage-07.jpg
     caption: ""
@@ -45,6 +39,34 @@ photos:
   - src: /assets/img/afterimage/afterimage-20.jpg
     caption: ""
   - src: /assets/img/afterimage/afterimage-21.jpg
+    caption: ""
+  - src: /assets/img/afterimage/afterimage-22.jpg
+    caption: ""
+  - src: /assets/img/afterimage/afterimage-23.jpg
+    caption: ""
+  - src: /assets/img/afterimage/afterimage-24.jpg
+    caption: ""
+  - src: /assets/img/afterimage/afterimage-25.jpg
+    caption: ""
+  - src: /assets/img/afterimage/afterimage-26.jpg
+    caption: ""
+  - src: /assets/img/afterimage/afterimage-27.jpg
+    caption: ""
+  - src: /assets/img/afterimage/afterimage-28.jpg
+    caption: ""
+  - src: /assets/img/afterimage/afterimage-29.jpg
+    caption: ""
+  - src: /assets/img/afterimage/afterimage-30.jpg
+    caption: ""
+  - src: /assets/img/afterimage/afterimage-31.jpg
+    caption: ""
+  - src: /assets/img/afterimage/afterimage-32.jpg
+    caption: ""
+  - src: /assets/img/afterimage/afterimage-33.jpg
+    caption: ""
+  - src: /assets/img/afterimage/afterimage-34.jpg
+    caption: ""
+  - src: /assets/img/afterimage/afterimage-35.jpg
     caption: ""
 ---
 
