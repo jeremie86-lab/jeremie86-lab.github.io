@@ -1,4 +1,5 @@
 ---
+published: false
 title: "Photographs for Ukraine"
 with: "Benefit exhibition and sale with Geneva photographers"
 venue: "Galerie Humanit'Art"
