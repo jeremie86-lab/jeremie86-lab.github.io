@@ -12,13 +12,11 @@ featured: true
 cover: /assets/img/exhibitions/go-out-2013/go-out-2013-04.jpg
 link: "https://galeriefahidtaghavi.ch/en/espace-exposition-de-go-out/"
 photos:
+  - src: /assets/img/exhibitions/go-out-2013/go-out-2013-01.jpg
+    caption: "The window on Rue du Diorama"
   - src: /assets/img/exhibitions/go-out-2013/go-out-2013-04.jpg
     caption: "A visitor among the works, June 2013"
-  - src: /assets/img/exhibitions/go-out-2013/go-out-2013-05.jpg
-    caption: "Visitor in front of the works"
   - src: /assets/img/exhibitions/go-out-2013/go-out-2013-06.jpg
-    caption: "Visitor in front of the works"
-  - src: /assets/img/exhibitions/go-out-2013/go-out-2013-07.jpg
     caption: "Visitor in front of the works"
   - src: /assets/img/exhibitions/go-out-2013/go-out-2013-03.jpg
     caption: "Opening evening"
