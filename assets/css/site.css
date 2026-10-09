@@ -108,11 +108,11 @@ a{color:inherit;text-decoration-color:color-mix(in srgb,currentColor 40%,transpa
 
 /* Page heads */
 .page-head{padding-block:clamp(56px,8vw,110px) 32px}
-.page-head .display{font-size:clamp(52px,10vw,150px)}
+.page-head .display{font-size:clamp(38px,10vw,150px)}
 
 /* Series */
 .series-head{padding-block:clamp(56px,8vw,110px) 40px}
-.series-head .display{font-size:clamp(56px,11vw,170px)}
+.series-head .display{font-size:clamp(36px,11vw,170px)}
 .series-sub{font:600 13px/1.4 var(--display);font-stretch:125%;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin:18px 0 0}
 .series-text{max-width:62ch;margin-top:26px;color:var(--ink-2);font-size:clamp(17px,1.4vw,19px)}
 .series-text p{margin:0 0 1em}
@@ -143,7 +143,7 @@ a{color:inherit;text-decoration-color:color-mix(in srgb,currentColor 40%,transpa
 .expo-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(24px,4vw,64px);align-items:start;margin-bottom:clamp(20px,3vw,40px)}
 .expo-cover{margin:0}
 .expo-cover img{width:100%;height:auto;max-height:82vh;object-fit:cover}
-.expo-title{font-size:clamp(40px,6vw,88px)}
+.expo-title{font-size:clamp(34px,4.6vw,76px);overflow-wrap:break-word}
 .expo-with{font:600 13px/1.4 var(--display);font-stretch:125%;letter-spacing:.16em;text-transform:uppercase;margin:16px 0 0}
 .expo-meta{color:var(--ink-2);margin:14px 0 20px;font-size:16px}
 .prose{color:var(--ink-2);max-width:62ch}
