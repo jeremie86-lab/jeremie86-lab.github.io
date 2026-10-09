@@ -1,12 +1,22 @@
 ---
 title: "First solo exhibition"
-with: "Jeremy Spierer"
-venue: "Galerie Fahid Taghavi"
+with: "Jeremy Spierer, with Galerie Fahid Taghavi"
+venue: "GO OUT! exhibition space, Rue du Diorama 16"
 city: "Geneva"
-dates: "2013"
+dates: "6 – 27 June 2013"
 year: "2013"
-start: 2013-01-01
+start: 2013-06-06
+end: 2013-06-27
 kind: "Solo exhibition"
-featured: false
-photos: []
+featured: true
+cover: /assets/img/exhibitions/go-out-2013/go-out-2013-01.jpg
+link: "https://galeriefahidtaghavi.ch/en/espace-exposition-de-go-out/"
+photos:
+  - src: /assets/img/exhibitions/go-out-2013/go-out-2013-01.jpg
+    caption: "The window on Rue du Diorama"
+  - src: /assets/img/exhibitions/go-out-2013/go-out-2013-02.jpg
+    caption: "Opening day, 6 June 2013"
+  - src: /assets/img/exhibitions/go-out-2013/go-out-2013-03.jpg
+    caption: "Opening evening"
 ---
+The first exhibition with Galerie Fahid Taghavi, hung in the exhibition space of the local Geneva publication GO OUT!, in its offices on Rue du Diorama.

@@ -8,8 +8,19 @@ year: "2021"
 start: 2021-05-04
 end: 2021-05-04
 kind: "Group exhibition"
-featured: false
+featured: true
+cover: /assets/img/exhibitions/collective-2021/collective-2021-01.jpg
 link: "https://galeriefahidtaghavi.ch/en/exposition-collective-mai-2021/"
-photos: []
+photos:
+  - src: /assets/img/exhibitions/collective-2021/collective-2021-01.jpg
+    caption: "Installation view"
+  - src: /assets/img/exhibitions/collective-2021/collective-2021-02.jpg
+    caption: "Installation view"
+  - src: /assets/img/exhibitions/collective-2021/collective-2021-03.jpg
+    caption: "Opening, 4 May 2021"
+  - src: /assets/img/exhibitions/collective-2021/collective-2021-04.jpg
+    caption: "Installation view"
+  - src: /assets/img/exhibitions/collective-2021/collective-2021-05.jpg
+    caption: "Opening evening"
 ---
-A short #horsgalerie exhibition by Galerie Fahid Taghavi offering a look at desire and the intimate.
+A short #horsgalerie group exhibition by Galerie Fahid Taghavi offering a look at desire and the intimate.
