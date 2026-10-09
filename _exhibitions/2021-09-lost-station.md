@@ -6,6 +6,7 @@ city: "Geneva"
 dates: "16 September 2021"
 year: "2021"
 start: 2021-09-16
+end: 2021-09-16
 kind: "Group exhibition"
 featured: true
 cover: /assets/img/exhibitions/lost-station/lost-station-02.jpg

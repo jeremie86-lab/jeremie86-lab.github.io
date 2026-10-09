@@ -6,6 +6,7 @@ city: "Monnetier, France"
 dates: "July – August 2019, opening 11 July"
 year: "2019"
 start: 2019-07-11
+end: 2019-08-31
 kind: "Group exhibition"
 featured: true
 cover: /assets/img/exhibitions/monnetier-2019/monnetier-2019-04.jpg

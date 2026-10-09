@@ -3,10 +3,10 @@ title: "Pretty Mundane"
 with: "Tanya Molskaya & Jeremy Spierer"
 venue: "Galerie Fahid Taghavi"
 city: "Geneva"
-dates: "1 – 18 March 2022, opening 3 March"
+dates: "Opening 3 March 2022"
 year: "2022"
 start: 2022-03-03
-end: 2022-03-18
+end: 2022-03-03
 kind: "Duo exhibition"
 featured: true
 cover: /assets/img/exhibitions/pretty-mundane/pretty-mundane-01.jpg
