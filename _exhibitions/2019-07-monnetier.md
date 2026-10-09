@@ -1,0 +1,25 @@
+---
+title: "Collective exhibition"
+with: "François Ruegg, Jeremy Spierer, Edgard Soares, Gianmaria de Luca"
+venue: "Galerie Fahid Taghavi"
+city: "Monnetier, France"
+dates: "July – August 2019, opening 11 July"
+year: "2019"
+start: 2019-07-11
+kind: "Group exhibition"
+featured: true
+cover: /assets/img/exhibitions/monnetier-2019/monnetier-2019-04.jpg
+link: "https://galeriefahidtaghavi.ch/en/exposition-collective-juillet-aout-2019/"
+photos:
+  - src: /assets/img/exhibitions/monnetier-2019/monnetier-2019-01.jpg
+    caption: "Installation view under the roof"
+  - src: /assets/img/exhibitions/monnetier-2019/monnetier-2019-02.jpg
+    caption: "Opening, 11 July 2019"
+  - src: /assets/img/exhibitions/monnetier-2019/monnetier-2019-03.jpg
+    caption: "Opening, 11 July 2019"
+  - src: /assets/img/exhibitions/monnetier-2019/monnetier-2019-04.jpg
+    caption: "Installation view"
+  - src: /assets/img/exhibitions/monnetier-2019/monnetier-2019-05.jpg
+    caption: "Installation view"
+---
+A summer group show in the gallery's attic space at Monnetier, curated by Fahid Taghavi and Flaminia Scauso.
