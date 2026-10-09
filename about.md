@@ -25,6 +25,10 @@ In the street, I go unseen. In the studio, I face something wild. It is the same
 </div>
       <p class="statement-sign">Jeremy Spierer</p>
     </section>
+    <figure class="about-scene">
+      <img src="{{ '/assets/img/about/jeremy-spierer-on-set.jpg' | relative_url }}" alt="Jeremy Spierer photographing a model lying on the floor of the studio" loading="lazy" decoding="async" width="724" height="1086">
+      <figcaption class="muted">In the studio, on set</figcaption>
+    </figure>
     <section class="bio" aria-labelledby="h-bio">
       <h2 id="h-bio" class="label">Biography</h2>
       <div class="prose" markdown="1">
