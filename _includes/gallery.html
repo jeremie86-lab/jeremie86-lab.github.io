@@ -1,11 +1,12 @@
-{%- comment -%} Usage: {% include gallery.html photos=page.photos title=page.title %} {%- endcomment -%}
+{%- comment -%} Usage: {% include gallery.html photos=page.photos title=page.title buy=true %} — buy=true adds a "Buy this work" link under each image {%- endcomment -%}
 <div class="gallery" data-gallery>
   {% for p in include.photos %}{% if p.src %}
+  {%- if include.buy -%}{%- capture work -%}{{ include.title }}, no. {{ forloop.index }}{% if p.caption and p.caption != '' %} ({{ p.caption | strip_html }}){% endif %}{%- endcapture -%}{%- capture buy_url -%}{{ '/contact/' | relative_url }}?subject=Print&work={{ work | url_encode }}{%- endcapture -%}{%- endif -%}
   <figure class="g-item">
-    <button type="button" class="g-open" data-src="{{ p.src | relative_url }}" data-caption="{{ p.caption | escape }}" aria-label="Open image {{ forloop.index }}{% if p.caption and p.caption != '' %}: {{ p.caption | escape }}{% endif %}">
+    <button type="button" class="g-open" data-src="{{ p.src | relative_url }}" data-caption="{{ p.caption | escape }}"{% if include.buy %} data-buy="{{ buy_url }}"{% endif %} aria-label="Open image {{ forloop.index }}{% if p.caption and p.caption != '' %}: {{ p.caption | escape }}{% endif %}">
       <img src="{{ p.src | relative_url }}" alt="{% if p.caption and p.caption != '' %}{{ p.caption | escape }}{% else %}{{ include.title | escape }}, image {{ forloop.index }}{% endif %}" loading="{% if forloop.index <= 3 %}eager{% else %}lazy{% endif %}" decoding="async">
     </button>
-    {% if p.caption and p.caption != '' %}<figcaption>{{ p.caption }}</figcaption>{% endif %}
+    {% assign show_fc = false %}{% if p.caption and p.caption != '' %}{% assign show_fc = true %}{% endif %}{% if include.buy %}{% assign show_fc = true %}{% endif %}{% if show_fc %}<figcaption>{% if p.caption and p.caption != '' %}<span class="g-cap">{{ p.caption }}</span>{% endif %}{% if include.buy %}<a class="buy" href="{{ buy_url }}">Buy this work</a>{% endif %}</figcaption>{% endif %}
   </figure>
   {% endif %}{% endfor %}
 </div>

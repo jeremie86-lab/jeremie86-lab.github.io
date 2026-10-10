@@ -1,10 +1,11 @@
-{%- comment -%} Diptychs: photos are read in pairs (1+2, 3+4…). The first photo of each pair carries the diptych title as its caption. {%- endcomment -%}
+{%- comment -%} Diptychs: photos are read in pairs (1+2, 3+4…). The first photo of each pair carries the diptych title as its caption. buy=true adds a "Buy this work" link under each diptych. {%- endcomment -%}
 <div class="diptychs" data-gallery>
   {% for p in include.photos %}{% assign m = forloop.index0 | modulo: 2 %}{% assign first_i = forloop.index0 | minus: m %}{% assign first = include.photos[first_i] %}{% assign dn = forloop.index0 | divided_by: 2 | plus: 1 %}
+  {%- if include.buy -%}{%- capture work -%}{{ include.title }}, diptych {{ dn }}{% if first.caption and first.caption != '' %} ({{ first.caption | strip_html }}){% endif %}{%- endcapture -%}{%- capture buy_url -%}{{ '/contact/' | relative_url }}?subject=Print&work={{ work | url_encode }}{%- endcapture -%}{%- endif -%}
   {% if m == 0 %}<figure class="dip g-item"><div class="dip-pair">{% endif %}
-    <button type="button" class="g-open" data-src="{{ p.src | relative_url }}" data-caption="{{ first.caption | escape }}" aria-label="Open image {{ forloop.index }}">
+    <button type="button" class="g-open" data-src="{{ p.src | relative_url }}" data-caption="{{ first.caption | escape }}"{% if include.buy %} data-buy="{{ buy_url }}"{% endif %} aria-label="Open image {{ forloop.index }}">
       <img src="{{ p.src | relative_url }}" alt="{{ include.title | escape }}, diptych {{ dn }}, {% if m == 0 %}left{% else %}right{% endif %}" loading="{% if forloop.index <= 2 %}eager{% else %}lazy{% endif %}" decoding="async">
     </button>
-  {% if m == 1 or forloop.last %}</div><figcaption><span class="dip-n">{% if dn < 10 %}0{% endif %}{{ dn }}</span>{% if first.caption and first.caption != '' %} {{ first.caption }}{% endif %}</figcaption></figure>{% endif %}
+  {% if m == 1 or forloop.last %}</div><figcaption><span class="dip-n">{% if dn < 10 %}0{% endif %}{{ dn }}</span>{% if first.caption and first.caption != '' %} {{ first.caption }}{% endif %}{% if include.buy %}<a class="buy" href="{{ buy_url }}">Buy this work</a>{% endif %}</figcaption></figure>{% endif %}
   {% endfor %}
 </div>
