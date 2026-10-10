@@ -52,7 +52,7 @@ He taught at the Leica Akademie Switzerland in 2019 and 2020 and has since mento
         {% for a in site.data.awards %}<li><span class="a-year">{{ a.year }}</span><span class="a-main"><strong>{{ a.title }}</strong></span><span class="a-venue">{{ a.detail }}</span></li>{% endfor %}
       </ol>
       <h3 class="label">Teaching</h3>
-      <ol class="archive-list"><li><span class="a-year">2020–</span><span class="a-main"><strong>Private mentoring</strong></span><span class="a-venue">One-to-one lessons</span></li><li><span class="a-year">2019–20</span><span class="a-main"><strong>Leica Akademie Switzerland</strong></span><span class="a-venue">Photography courses</span></li></ol>
+      <ol class="archive-list"><li><span class="a-year">2020–</span><span class="a-main"><strong><a href="/lessons/">Private lessons</a></strong></span><span class="a-venue">One-to-one lessons</span></li><li><span class="a-year">2019–20</span><span class="a-main"><strong>Leica Akademie Switzerland</strong></span><span class="a-venue">Photography courses</span></li></ol>
       <h3 class="label">Publications</h3>
       <ol class="archive-list"><li><span class="a-year">2020</span><span class="a-main"><strong><em>Inspiration Leica Akademie</em></strong> <span class="muted">— two chapters</span></span><span class="a-venue">Book by Heidi and Robert Mertens</span></li><li><span class="a-year">2018–19</span><span class="a-main"><strong><em>Backstage</em></strong> <span class="muted">— editor</span></span><span class="a-venue">Magazine, Cannes Film Festival</span></li></ol>
     </section>
