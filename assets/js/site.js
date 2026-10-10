@@ -11,13 +11,13 @@
   }
 
   // Lightbox
-  var items=[],idx=0,lb,img,cap,count,lastFocus;
+  var items=[],idx=0,lb,img,cap,count,buy,lastFocus;
   function build(){
     lb=document.createElement('div');lb.className='lb';lb.hidden=true;lb.setAttribute('role','dialog');lb.setAttribute('aria-modal','true');lb.setAttribute('aria-label','Image viewer');
-    lb.innerHTML='<span class="lb-count"></span><figure class="lb-fig"><img class="lb-img" alt=""></figure><p class="lb-cap"></p>'+
+    lb.innerHTML='<span class="lb-count"></span><figure class="lb-fig"><img class="lb-img" alt=""></figure><p class="lb-cap"></p><a class="lb-buy buy" hidden>Buy this work</a>'+
       '<button class="lb-close" type="button" aria-label="Close">×</button><button class="lb-prev" type="button" aria-label="Previous image">‹</button><button class="lb-next" type="button" aria-label="Next image">›</button>';
     document.body.appendChild(lb);
-    img=lb.querySelector('.lb-img');cap=lb.querySelector('.lb-cap');count=lb.querySelector('.lb-count');
+    img=lb.querySelector('.lb-img');cap=lb.querySelector('.lb-cap');count=lb.querySelector('.lb-count');buy=lb.querySelector('.lb-buy');
     lb.querySelector('.lb-close').onclick=close;
     lb.querySelector('.lb-prev').onclick=function(){go(-1)};
     lb.querySelector('.lb-next').onclick=function(){go(1)};
@@ -30,6 +30,7 @@
   function show(){var b=items[idx],src=b.dataset.src,probe=new Image();probe.src=src;
     // Already in the browser cache: swap instantly (no fade when paging with arrows); otherwise fade in once loaded
     img.classList.toggle('is-loading',!probe.complete);img.onload=function(){img.classList.remove('is-loading')};img.src=src;img.alt=b.querySelector('img').alt;cap.textContent=b.dataset.caption||'';count.textContent=(idx+1)+' / '+items.length;
+    if(b.dataset.buy){buy.href=b.dataset.buy;buy.hidden=false;}else{buy.hidden=true;buy.removeAttribute('href');}
     var n=items[(idx+1)%items.length];if(n){var p=new Image();p.src=n.dataset.src;}}
   function go(d){idx=(idx+d+items.length)%items.length;show();}
   function open(list,i){if(!lb)build();items=list;idx=i;lastFocus=document.activeElement;show();lb.hidden=false;document.body.classList.add('lb-on');lb.querySelector('.lb-close').focus();}
@@ -58,15 +59,21 @@
   });
   document.querySelectorAll('[data-hide-after]').forEach(function(el){if(today>el.getAttribute('data-hide-after'))el.hidden=true;});
 
-  // Contact form: confirmation message, topic from ?subject=, email subject and reply-to
-  var f=document.querySelector('[data-contact-form]');
-  if(f){
+  // Forms (contact, mentoring): confirmation message, topic and work from the URL, email subject and reply-to
+  document.querySelectorAll('[data-contact-form]').forEach(function(f){
     var q=new URLSearchParams(location.search);
-    if(q.get('sent')){var ok=document.querySelector('[data-form-sent]');if(ok){ok.hidden=false;f.hidden=true;}}
+    var box=f.parentNode.querySelector('[data-form-sent]');
+    if(q.get('sent')&&box){box.hidden=false;f.hidden=true;}
     var tp=f.querySelector('[data-topic]'),out=f.querySelector('[data-subject-out]'),em=f.querySelector('[data-email]'),rt=f.querySelector('[data-replyto]');
     var want=q.get('subject');if(want&&tp){Array.prototype.forEach.call(tp.options,function(o){if(o.value===want)tp.value=want;});}
-    f.addEventListener('submit',function(){if(out&&tp)out.value='Website enquiry: '+tp.value;if(rt&&em)rt.value=em.value;});
-  }
+    var work=q.get('work'),wf=f.querySelector('[data-work]'),wn=f.querySelector('[data-work-note]'),msg=f.querySelector('textarea[name="message"]');
+    if(work&&wf){wf.value=work;wf.disabled=false;if(wn){wn.hidden=false;var t=wn.querySelector('[data-work-title]');if(t)t.textContent=work;}
+      if(msg&&!msg.value)msg.value='I would like to buy this work: '+work+'.\n\nSize or format I have in mind: \nWhere I am based: ';}
+    f.addEventListener('submit',function(){
+      var base=f.getAttribute('data-subject-base')||'Website enquiry';
+      if(out)out.value=base+(tp?': '+tp.value:'')+(work&&wf&&!wf.disabled?' – '+work:'');
+      if(rt&&em)rt.value=em.value;});
+  });
 
   // Discourage casual image saving (right-click) — not a real protection
   document.addEventListener('contextmenu',function(e){if(e.target.tagName==='IMG')e.preventDefault();});
