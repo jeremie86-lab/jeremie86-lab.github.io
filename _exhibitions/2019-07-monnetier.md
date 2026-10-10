@@ -22,5 +22,17 @@ photos:
     caption: "Installation view"
   - src: /assets/img/exhibitions/monnetier-2019/monnetier-2019-05.jpg
     caption: "Installation view"
+  - src: /assets/img/exhibitions/monnetier-2019/monnetier-2019-06.jpg
+    caption: "Visitors, 21 July 2019"
+  - src: /assets/img/exhibitions/monnetier-2019/monnetier-2019-07.jpg
+    caption: "Installation view, 21 July 2019"
+  - src: /assets/img/exhibitions/monnetier-2019/monnetier-2019-08.jpg
+    caption: "Installation view, 21 July 2019"
+  - src: /assets/img/exhibitions/monnetier-2019/monnetier-2019-09.jpg
+    caption: "Installation view, 28 July 2019"
+  - src: /assets/img/exhibitions/monnetier-2019/monnetier-2019-10.jpg
+    caption: "Installation view, 28 July 2019"
+  - src: /assets/img/exhibitions/monnetier-2019/monnetier-2019-11.jpg
+    caption: "Visitors, 28 July 2019"
 ---
 A summer group show in the gallery's attic space at Monnetier, curated by Fahid Taghavi and Flaminia Scauso.

@@ -24,5 +24,35 @@ photos:
     caption: "Opening evening"
   - src: /assets/img/exhibitions/salle-favre-2020/salle-favre-2020-06.jpg
     caption: "Opening evening"
+  - src: /assets/img/exhibitions/salle-favre-2020/salle-favre-2020-07.jpg
+    caption: "Opening day, 22 September 2020"
+  - src: /assets/img/exhibitions/salle-favre-2020/salle-favre-2020-08.jpg
+    caption: "Opening evening"
+  - src: /assets/img/exhibitions/salle-favre-2020/salle-favre-2020-09.jpg
+    caption: "Opening evening"
+  - src: /assets/img/exhibitions/salle-favre-2020/salle-favre-2020-10.jpg
+    caption: "Opening evening"
+  - src: /assets/img/exhibitions/salle-favre-2020/salle-favre-2020-11.jpg
+    caption: "Opening evening"
+  - src: /assets/img/exhibitions/salle-favre-2020/salle-favre-2020-12.jpg
+    caption: "Opening evening"
+  - src: /assets/img/exhibitions/salle-favre-2020/salle-favre-2020-13.jpg
+    caption: "Opening evening"
+  - src: /assets/img/exhibitions/salle-favre-2020/salle-favre-2020-14.jpg
+    caption: "Opening evening"
+  - src: /assets/img/exhibitions/salle-favre-2020/salle-favre-2020-15.jpg
+    caption: "Installation view"
+  - src: /assets/img/exhibitions/salle-favre-2020/salle-favre-2020-16.jpg
+    caption: "Opening evening"
+  - src: /assets/img/exhibitions/salle-favre-2020/salle-favre-2020-17.jpg
+    caption: "Opening evening"
+  - src: /assets/img/exhibitions/salle-favre-2020/salle-favre-2020-18.jpg
+    caption: "Installation view, 24 September 2020"
+  - src: /assets/img/exhibitions/salle-favre-2020/salle-favre-2020-19.jpg
+    caption: "Installation view, 24 September 2020"
+  - src: /assets/img/exhibitions/salle-favre-2020/salle-favre-2020-20.jpg
+    caption: "Installation view, 24 September 2020"
+  - src: /assets/img/exhibitions/salle-favre-2020/salle-favre-2020-21.jpg
+    caption: "Installation view, 24 September 2020"
 ---
 Four evenings of recent work, hung by Galerie Fahid Taghavi in its #horsgalerie series dedicated to photographers, in the Salle Favre of La Madeleine, in the old town of Geneva.
