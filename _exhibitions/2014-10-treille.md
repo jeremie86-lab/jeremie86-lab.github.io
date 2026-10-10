@@ -9,16 +9,14 @@ start: 2014-10-07
 end: 2014-10-21
 kind: "Group exhibition"
 featured: true
-cover: /assets/img/exhibitions/treille-2014/treille-2014-01.jpg
+cover: /assets/img/exhibitions/treille-2014/treille-2014-05.jpg
 link: "https://galeriefahidtaghavi.ch/en/espace-exposition-porte-de-la-treille-7-21-oct/"
 photos:
-  - src: /assets/img/exhibitions/treille-2014/treille-2014-01.jpg
-    caption: "Hanging under the vaults, 6 October 2014"
-  - src: /assets/img/exhibitions/treille-2014/treille-2014-02.jpg
-    caption: "Installation view"
-  - src: /assets/img/exhibitions/treille-2014/treille-2014-03.jpg
-    caption: "The names go up on the wall"
+  - src: /assets/img/exhibitions/treille-2014/treille-2014-05.jpg
+    caption: "Presenting the series, 9 October 2014"
   - src: /assets/img/exhibitions/treille-2014/treille-2014-04.jpg
     caption: "Opening evening, 7 October 2014"
+  - src: /assets/img/exhibitions/treille-2014/treille-2014-06.jpg
+    caption: "Visitors under the vaults, 9 October 2014"
 ---
 A group exhibition organised by Fahid Taghavi in the vaulted space of the Porte de la Treille, in Geneva's old town. Jeremy Spierer showed his series “Lux in silentio”: silence, calm light and solitary shadow, characters wavering between shadow and light.
