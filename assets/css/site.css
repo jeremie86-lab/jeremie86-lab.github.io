@@ -1,7 +1,7 @@
 /* Jeremy Spierer — site styles */
 :root{
   color-scheme: dark;
-  --bg:#0b0b0b; --bg-2:#141312; --ink:#f1efec; --ink-2:#cfcac3; --muted:#8f8a83; --line:#272523; --red:#d0202f;
+  --bg:#0b0b0b; --bg-2:#141312; --ink:#f1efec; --ink-2:#cfcac3; --muted:#8f8a83; --line:#272523; --red:#d0202f; --red-text:#e5404c; --line-strong:#6a655f;
   --display:"Archivo", "Helvetica Neue", Arial, sans-serif;
   --body:"Karla", "Helvetica Neue", Arial, sans-serif;
   --gutter:clamp(16px,4vw,48px);
@@ -25,7 +25,7 @@ a{color:inherit;text-decoration-color:color-mix(in srgb,currentColor 40%,transpa
 .display{font-family:var(--display);font-weight:700;font-stretch:118%;text-transform:uppercase;letter-spacing:.01em;line-height:.95;text-wrap:balance;margin:0}
 .h2{font:700 13px/1 var(--display);font-stretch:125%;letter-spacing:.24em;text-transform:uppercase;margin:0}
 .h3{font:700 15px/1.2 var(--display);font-stretch:118%;letter-spacing:.08em;text-transform:uppercase;margin:0 0 10px}
-.kicker,.label{font:600 11.5px/1.2 var(--display);font-stretch:125%;letter-spacing:.22em;text-transform:uppercase;color:var(--red);margin:0 0 14px}
+.kicker,.label{font:600 11.5px/1.2 var(--display);font-stretch:125%;letter-spacing:.22em;text-transform:uppercase;color:var(--red-text);margin:0 0 14px}
 .label{color:var(--muted);display:block;margin:0 0 6px}
 .lead{font-size:clamp(18px,1.6vw,21px);line-height:1.55;color:var(--ink-2);max-width:62ch}
 .more{font:600 12px/1 var(--display);font-stretch:125%;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;display:inline-flex;gap:10px;align-items:center;margin-right:28px}
@@ -37,10 +37,10 @@ a{color:inherit;text-decoration-color:color-mix(in srgb,currentColor 40%,transpa
 .page-home .site-header{position:fixed;inset-inline:0;background:linear-gradient(to bottom,rgba(0,0,0,.55),transparent);border-bottom-color:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;transition:background .3s}
 .page-home .site-header.is-solid{background:color-mix(in srgb,var(--bg) 92%,transparent);border-bottom-color:var(--line)}
 .brand{font:800 24px/1 var(--display);font-stretch:125%;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;white-space:nowrap}
-.brand-dot{color:var(--red);letter-spacing:0}
+.brand-dot{color:var(--red-text);letter-spacing:0}
 .site-nav{display:flex;align-items:center;gap:30px}
 .site-nav a{display:inline-block;font:600 12px/1 var(--display);font-stretch:125%;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;padding-block:8px}
-.site-nav a.is-active{color:var(--red)}
+.site-nav a.is-active{color:var(--red-text)}
 .has-sub{position:relative;display:flex;align-items:center;line-height:1}
 .sub{position:absolute;top:100%;left:-18px;min-width:220px;list-style:none;margin:0;padding:12px 0;background:var(--bg-2);border:1px solid var(--line);opacity:0;visibility:hidden;transform:translateY(6px);transition:opacity 180ms var(--ease-out),transform 180ms var(--ease-out),visibility 180ms}
 .has-sub:focus-within .sub{opacity:1;visibility:visible;transform:none}
@@ -127,7 +127,7 @@ a{color:inherit;text-decoration-color:color-mix(in srgb,currentColor 40%,transpa
 .dip-pair .g-open{background:transparent}
 .dip-pair img{width:100%;height:auto;max-height:82svh;object-fit:contain}
 .dip figcaption{font-size:14px;color:var(--ink-2);padding:14px 2px 0;letter-spacing:.02em}
-.dip-n{color:var(--red);font-variant-numeric:tabular-nums;margin-right:8px}
+.dip-n{color:var(--red-text);font-variant-numeric:tabular-nums;margin-right:8px}
 @media (max-width:640px){.dip-pair{gap:6px}}
 .archive-link{margin:clamp(40px,5vw,64px) 0 0}
 .archive-lead{margin-top:14px}
@@ -156,7 +156,7 @@ a{color:inherit;text-decoration-color:color-mix(in srgb,currentColor 40%,transpa
 .awards-h{margin-top:64px}
 .archive-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
 .archive-list li{display:grid;grid-template-columns:90px minmax(0,1.4fr) minmax(0,1fr);gap:18px;padding:16px 0;border-bottom:1px solid var(--line);font-size:16px;scroll-margin-top:80px}
-.a-year{font:700 14px/1.6 var(--display);font-stretch:118%;color:var(--red);font-variant-numeric:tabular-nums}
+.a-year{font:700 14px/1.6 var(--display);font-stretch:118%;color:var(--red-text);font-variant-numeric:tabular-nums}
 .a-venue{color:var(--muted)}
 @media (max-width:700px){.archive-list li{grid-template-columns:60px 1fr}.a-venue{grid-column:2}}
 
@@ -236,16 +236,16 @@ body.lb-on{overflow:hidden}
   a:hover{text-decoration-color:var(--red)}
   .more:hover::after{transform:scaleX(1)}
   .btn:hover{background:var(--ink);color:var(--bg)}
-  .site-nav a:hover{color:var(--red)}
+  .site-nav a:hover{color:var(--red-text)}
   .has-sub:hover .sub{opacity:1;visibility:visible;transform:none}
   .card:hover img{transform:scale(1.04);filter:none}
   .card:hover .card-t{transform:translateY(-4px)}
   .card:hover .card-t::after{transform:scaleX(1)}
   .expo-card:hover img{filter:none}
-  .expo-card:hover .expo-t{color:var(--red)}
+  .expo-card:hover .expo-t{color:var(--red-text)}
   .g-open:hover img{opacity:.88}
-  .pg:hover .pg-t{color:var(--red)}
-  .lb button:hover{color:var(--red)}
+  .pg:hover .pg-t{color:var(--red-text)}
+  .lb button:hover{color:var(--red-text)}
   .visit-links a:hover{color:var(--ink);border-color:var(--red)}
   .contact-form .btn:hover{background:var(--ink);color:var(--bg)}
 }
@@ -277,7 +277,7 @@ body.lb-on{overflow:hidden}
 .steps{padding-block:clamp(40px,6vw,80px)}
 .steps-list{list-style:none;counter-reset:st;margin:28px 0 36px;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,3vw,40px)}
 .steps-list li{counter-increment:st;border-top:1px solid var(--line);padding-top:18px;color:var(--ink-2)}
-.steps-list li::before{content:counter(st,decimal-leading-zero);display:block;font:700 12px/1 var(--display);font-stretch:125%;letter-spacing:.2em;color:var(--red);margin-bottom:12px}
+.steps-list li::before{content:counter(st,decimal-leading-zero);display:block;font:700 12px/1 var(--display);font-stretch:125%;letter-spacing:.2em;color:var(--red-text);margin-bottom:12px}
 .steps-list strong{color:var(--ink);font-weight:600}
 @media (max-width:760px){.steps-list{grid-template-columns:1fr}}
 
@@ -291,7 +291,7 @@ body.lb-on{overflow:hidden}
 .f-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .f{display:grid;gap:8px}
 .f .label{margin:0}
-.contact-form input,.contact-form select,.contact-form textarea{font:400 16px/1.5 var(--body);color:var(--ink);background:var(--bg-2);border:1px solid var(--line);border-radius:0;padding:13px 14px;width:100%;box-sizing:border-box;color-scheme:dark;transition:border-color .2s}
+.contact-form input,.contact-form select,.contact-form textarea{font:400 16px/1.5 var(--body);color:var(--ink);background:var(--bg-2);border:1px solid var(--line-strong);border-radius:0;padding:13px 14px;width:100%;box-sizing:border-box;color-scheme:dark;transition:border-color .2s}
 .contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus{outline:none;border-color:var(--ink)}
 .contact-form textarea{resize:vertical;min-height:150px}
 .contact-form .btn{justify-self:start;background:none;color:var(--ink);cursor:pointer}
@@ -370,3 +370,11 @@ body.lb-on{overflow:hidden}
   .block-head{flex-wrap:wrap;row-gap:10px}
   .block-head .h2,.block-head .more{white-space:nowrap}
 }
+
+/* Accessibility & touch pass (mobile-native + WCAG 2.1 AA review) */
+.contact-form ::placeholder{color:var(--muted);opacity:1}
+body.nav-open{overflow:hidden}
+.site-nav,.lb{overscroll-behavior:contain}
+.g-open img,.lb-img,.card img{-webkit-touch-callout:none}
+.buy:active,.more:active,.visit-links a:active,.site-nav a:active{opacity:.6}
+.buy,.more,.visit-links a{transition:opacity 100ms var(--ease-out)}
