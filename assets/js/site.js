@@ -25,7 +25,7 @@
     var sx=null;
     lb.addEventListener('touchstart',function(e){sx=e.touches[0].clientX},{passive:true});
     lb.addEventListener('touchend',function(e){if(sx===null)return;var dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>50)go(dx<0?1:-1);sx=null;});
-    document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')close();if(e.key==='ArrowRight')go(1);if(e.key==='ArrowLeft')go(-1);});
+    document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Tab'){var f=Array.prototype.filter.call(lb.querySelectorAll('button,a[href]'),function(x){return !x.hidden&&x.offsetParent!==null;});if(f.length){var a=f[0],z=f[f.length-1];if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus();}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus();}else if(!lb.contains(document.activeElement)){e.preventDefault();a.focus();}}}if(e.key==='Escape')close();if(e.key==='ArrowRight')go(1);if(e.key==='ArrowLeft')go(-1);});
   }
   function show(){var b=items[idx],src=b.dataset.src,probe=new Image();probe.src=src;
     // Already in the browser cache: swap instantly (no fade when paging with arrows); otherwise fade in once loaded
