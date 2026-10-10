@@ -7,7 +7,7 @@ description: "Contact Jeremy Spierer for prints, commissions, private lessons an
 {% assign s = site.data.settings %}
 <section class="contact wrap">
   <h1 class="display">Contact</h1>
-  <p class="lead">Hand-signed prints in small editions, photoshoots and artistic collaborations. Write to me directly.</p>
+  <p class="lead">Hand-signed prints in small editions, photoshoots, private lessons and artistic collaborations. Write to me directly.</p>
 
   {% if s.contact_form %}
   <div class="form-sent" data-form-sent hidden>
@@ -19,6 +19,8 @@ description: "Contact Jeremy Spierer for prints, commissions, private lessons an
     <input type="hidden" name="_next" value="{{ '/contact/' | absolute_url }}?sent=1">
     <input type="hidden" name="_template" value="table">
     <input type="hidden" name="_replyto" value="" data-replyto>
+    <input type="hidden" name="work" value="" data-work disabled>
+    <p class="work-note" data-work-note hidden><span class="label">Work</span><span data-work-title></span></p>
     <p class="hp" aria-hidden="true"><label>Leave empty <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></p>
     <div class="f-row">
       <label class="f"><span class="label">Name</span><input type="text" name="name" autocomplete="name" required></label>
@@ -28,7 +30,7 @@ description: "Contact Jeremy Spierer for prints, commissions, private lessons an
       <select name="topic" data-topic>
         <option value="Print">A print</option>
         <option value="Commission">A commission</option>
-        <option value="Private lesson">Private lessons</option>
+        <option value="Private lesson">Private lessons and mentoring</option>
         <option value="CROCO">The CROCO exhibition</option>
         <option value="Other" selected>Something else</option>
       </select>

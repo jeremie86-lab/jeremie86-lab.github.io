@@ -1,0 +1,124 @@
+---
+layout: default
+title: Mentoring
+permalink: /mentoring/
+description: "Private photography lessons and mentoring with Jeremy Spierer in Geneva, one to one, from your first frame to a personal way of seeing."
+field_photos:
+  - src: /assets/img/mentoring/mentoring-02.jpg
+    caption: "Workshop in Geneva, 2019"
+  - src: /assets/img/mentoring/mentoring-04.jpg
+    caption: "Street workshop, Zurich, 2019"
+  - src: /assets/img/mentoring/mentoring-03.jpg
+    caption: "Workshop in Geneva, 2019"
+  - src: /assets/img/mentoring/mentoring-05.jpg
+    caption: "On the lakeside, Geneva, 2019"
+  - src: /assets/img/mentoring/mentoring-06.jpg
+    caption: "Street workshop, Zurich, 2019"
+---
+{% assign s = site.data.settings %}
+<section class="page-head wrap">
+  <h1 class="display">Mentoring</h1>
+  <p class="lead">Private photography lessons in Geneva, one to one. From your first frame to a way of seeing that is yours.</p>
+  <a class="btn" href="#book">Book a first conversation</a>
+</section>
+
+<section class="mentor-intro wrap wide">
+  <figure class="mentor-hero">
+    <img src="{{ '/assets/img/mentoring/mentoring-01.jpg' | relative_url }}" alt="Jeremy Spierer walking with workshop participants, cameras in hand, in the streets of Zurich" width="1800" height="1201" decoding="async">
+    <figcaption class="muted">Street workshop with the Leica Akademie, Zurich, 2019</figcaption>
+  </figure>
+  <div class="mentor-text prose">
+    <h2 class="h2">How I teach</h2>
+    <p>I taught myself photography in the street, and that is still where I teach it. Each session lasts three hours, just the two of us: a little theory, then a lot of practice outside, in Geneva and around it. We start with your camera until it stops being in the way, then we work on what matters most: learning to see.</p>
+    <p>In 2019 and 2020 I led courses and street workshops for the Leica Akademie Switzerland, in Geneva and Zurich. Two chapters of the book <em>Inspiration Leica Akademie</em> (Heidi and Robert Mertens, Rheinwerk, 2020) are devoted to my approach: <em>The Sneaker Zoom</em>, on working with a fixed 50&nbsp;mm lens and moving with your feet, and <em>Beyond Routines</em>, on questioning your habits to find new subjects.</p>
+    <p>Beginner or experienced, with a mirrorless, a reflex or a Leica: the lessons adapt to your level, your pace and what you want to achieve.</p>
+  </div>
+</section>
+
+<section class="block wrap" aria-labelledby="h-programme">
+  <div class="block-head"><h2 id="h-programme" class="h2">The programme</h2></div>
+  <div class="mentor-steps">
+    <div class="mentor-step">
+      <p class="kicker">Step 1</p>
+      <h3 class="h3">The foundations</h3>
+      <p class="mentor-meta">5 sessions of 3 hours · one to one · your own camera · Geneva and around</p>
+      <ol class="mentor-list">
+        <li><strong>Your camera.</strong> Menus, essential settings, focus modes, customising the controls.</li>
+        <li><strong>Exposure.</strong> Aperture, shutter speed and ISO: understanding the trio and going manual.</li>
+        <li><strong>Composition and natural light.</strong> The rules that work, when to break them, how to read light.</li>
+        <li><strong>Reportage in the city.</strong> In the streets of Geneva: anticipation and the decisive moment.</li>
+        <li><strong>Selection and editing.</strong> A Lightroom Classic workflow: import, sort, edit, export, back up.</li>
+      </ol>
+    </div>
+    <div class="mentor-step">
+      <p class="kicker">Step 2</p>
+      <h3 class="h3">Then you choose</h3>
+      <p class="mentor-meta">Modules of 3 hours · in any order · as many as you like</p>
+      <p>At the end of the foundations you receive a contact sheet, like the ones photographers use to choose their pictures. Each frame is a module. Circle the ones that speak to you and build your own path.</p>
+      <ul class="mentor-tags">
+        <li>The street</li><li>The night</li><li>The event</li><li>Street flash</li>
+        <li>Travel portrait</li><li>Landscape and light</li><li>Architecture</li><li>Minimalism and black &amp; white</li>
+        <li>Natural-light portrait</li><li>Directing a model in the city</li><li>Blur and movement</li><li>The artistic portrait</li>
+        <li>Finding your style</li><li>The series and the book</li><li>A module made to measure</li><li>A day-long photo excursion</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="block wrap wide" aria-labelledby="h-workshops">
+  <div class="block-head"><h2 id="h-workshops" class="h2">In the field</h2></div>
+  {% include gallery.html photos=page.field_photos title='Mentoring' %}
+</section>
+
+<section class="block wrap wide" aria-labelledby="h-book">
+  <div class="block-head"><h2 id="h-book" class="h2">In the book</h2></div>
+  <div class="mentor-book">
+    <figure class="mentor-book-cover">
+      <img src="{{ '/assets/img/mentoring/book-cover.jpg' | relative_url }}" alt="Cover of the book Inspiration Leica Akademie by Heidi and Robert Mertens" loading="lazy" decoding="async">
+    </figure>
+    <div class="mentor-book-spreads">
+      <figure><img src="{{ '/assets/img/mentoring/book-beyond-routines.jpg' | relative_url }}" alt="Spread of the chapter Beyond Routines, with photographs by Jeremy Spierer" loading="lazy" decoding="async"><figcaption class="muted">“Beyond Routines”</figcaption></figure>
+      <figure><img src="{{ '/assets/img/mentoring/book-sneaker-zoom.jpg' | relative_url }}" alt="Spread of the chapter The Sneaker Zoom, with photographs by Jeremy Spierer" loading="lazy" decoding="async"><figcaption class="muted">“The Sneaker Zoom”</figcaption></figure>
+    </div>
+  </div>
+  <p class="section-note"><em>Inspiration Leica Akademie</em>, Heidi and Robert Mertens, Rheinwerk, 2020.</p>
+</section>
+
+<section class="contact wrap" id="book" aria-labelledby="h-book-form">
+  <h2 id="h-book-form" class="h2">Book a first conversation</h2>
+  <p class="lead">Tell me where you are and what you would like to learn. I will get back to you to talk through your goals and suggest the path that suits you.</p>
+  {% if s.contact_form %}
+  <div class="form-sent" data-form-sent hidden>
+    <p class="h3">Thank you.</p>
+    <p>Your request has been sent. I'll get back to you by email shortly.</p>
+  </div>
+  <form class="contact-form" action="https://formsubmit.co/{{ s.email }}" method="POST" data-contact-form data-subject-base="Mentoring request">
+    <input type="hidden" name="_subject" value="Mentoring request" data-subject-out>
+    <input type="hidden" name="_next" value="{{ '/mentoring/' | absolute_url }}?sent=1#book">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_replyto" value="" data-replyto>
+    <p class="hp" aria-hidden="true"><label>Leave empty <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></p>
+    <div class="f-row">
+      <label class="f"><span class="label">Name</span><input type="text" name="name" autocomplete="name" required></label>
+      <label class="f"><span class="label">Email</span><input type="email" name="email" autocomplete="email" required data-email></label>
+    </div>
+    <div class="f-row">
+      <label class="f"><span class="label">Phone (optional)</span><input type="tel" name="phone" autocomplete="tel"></label>
+      <label class="f"><span class="label">Your level</span>
+        <select name="level">
+          <option value="Beginner">Beginner</option>
+          <option value="Some experience" selected>Some experience</option>
+          <option value="Advanced">Advanced</option>
+        </select>
+      </label>
+    </div>
+    <label class="f"><span class="label">Your camera (optional)</span><input type="text" name="camera" placeholder="e.g. Leica Q3, Fujifilm X100, Canon R6, smartphone"></label>
+    <label class="f"><span class="label">What would you like to learn or achieve?</span><textarea name="goals" rows="6" required placeholder="Your goals, the kind of pictures you want to make, a project you have in mind…"></textarea></label>
+    <label class="f"><span class="label">When are you available? (optional)</span><input type="text" name="availability" placeholder="e.g. weekday evenings, weekends"></label>
+    <button class="btn" type="submit">Send my request</button>
+    <p class="f-note muted">Rates on request. Messages are delivered to my inbox by <a href="https://formsubmit.co/" rel="noopener" target="_blank">FormSubmit</a>. You may be asked to confirm you are not a robot.</p>
+  </form>
+  {% else %}
+  <p><a class="btn" href="mailto:{{ s.email }}?subject=Mentoring">Write to me</a></p>
+  {% endif %}
+</section>

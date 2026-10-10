@@ -21,7 +21,7 @@ description: "Hand-signed prints and works by Jeremy Spierer, available on reque
     <a class="more" href="{{ croco.url | relative_url }}">See the series</a>
   </div>
   <p class="section-note">Collaborative works with the painter Tiphaine Koltes{% if ce %}, shown in <a href="{{ '/exhibitions/' | relative_url }}#{{ ce.slug }}">CROCO</a> at {{ ce.venue }}{% endif %}. Works are available for purchase ahead of the opening. Reservations are taken on a first-come, first-served basis and confirmed in writing.</p>
-  {% include gallery.html photos=works title='CROCO' %}
+  {% include gallery.html photos=works title='CROCO' buy=true %}
 </section>
 {% endif %}
 
@@ -43,8 +43,8 @@ description: "Hand-signed prints and works by Jeremy Spierer, available on reque
 <section class="steps wrap" aria-labelledby="h-how">
   <h2 id="h-how" class="h2">How to enquire</h2>
   <ol class="steps-list">
-    <li><strong>Choose a photograph.</strong> Note the series and the image number shown in the viewer.</li>
-    <li><strong>Write to me.</strong> Tell me the size you have in mind and where you are based.</li>
+    <li><strong>Choose a photograph.</strong> Click “Buy this work” under any image, in the series or in the viewer.</li>
+    <li><strong>Send the short form.</strong> The work is already filled in: just add the size you have in mind and where you are based.</li>
     <li><strong>I reply</strong> with available formats, edition details and price.</li>
   </ol>
   <a class="btn" href="{{ '/contact/' | relative_url }}?subject=Print">Enquire about a print</a>
