@@ -300,3 +300,42 @@ body.lb-on{overflow:hidden}
 .form-sent{margin-top:40px;padding:24px 26px;border:1px solid var(--line);border-left:2px solid var(--red);max-width:760px}
 .form-sent p{margin:0}.form-sent .h3{margin-bottom:6px}
 @media (max-width:560px){.f-row{grid-template-columns:1fr}}
+
+/* Buy this work */
+.g-item figcaption{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 16px}
+.g-cap{flex:1 1 auto;min-width:0}
+.buy{font:600 11px/1 var(--display);font-stretch:125%;letter-spacing:.18em;text-transform:uppercase;color:var(--ink);text-decoration:none;white-space:nowrap;display:inline-flex;align-items:center;gap:8px;padding:6px 0}
+.buy::after{content:"";width:22px;height:1px;background:var(--red);transform-origin:left;transition:transform 250ms var(--ease-out)}
+.diptychs figcaption .buy{margin-left:auto}
+.lb-buy{display:table;margin:12px auto 0}
+.lb-buy[hidden]{display:none}
+.work-note{margin:0;padding:14px 16px;border:1px solid var(--line);border-left:2px solid var(--red);background:var(--bg-2);color:var(--ink)}
+.work-note .label{margin:0 0 6px}
+@media (hover:hover) and (pointer:fine){.buy:hover::after{transform:scaleX(1.6)}}
+
+/* Mentoring */
+.page-head .btn{margin-top:8px}
+.mentor-intro{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:start;padding-bottom:clamp(40px,6vw,80px)}
+.mentor-hero{margin:0}
+.mentor-hero img{width:100%;height:auto}
+.mentor-hero figcaption{font-size:13px;margin-top:8px}
+.mentor-text .h2{margin:0 0 22px}
+.mentor-text{font-size:18px}
+@media (max-width:900px){.mentor-intro{grid-template-columns:1fr}}
+.mentor-steps{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,72px)}
+.mentor-step{border-top:1px solid var(--line);padding-top:22px;color:var(--ink-2)}
+.mentor-step .kicker{margin-bottom:10px}
+.mentor-meta{font-size:14px;color:var(--muted);margin:0 0 18px}
+.mentor-list{margin:0;padding-left:1.2em;display:grid;gap:10px}
+.mentor-list strong{color:var(--ink);font-weight:600}
+.mentor-tags{list-style:none;margin:22px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+.mentor-tags li{background:var(--bg-2);border:1px solid var(--line);padding:12px 10px;font-size:13.5px;line-height:1.3;color:var(--ink);min-height:62px;display:flex;align-items:flex-end}
+@media (max-width:900px){.mentor-steps{grid-template-columns:1fr}}
+@media (max-width:520px){.mentor-tags{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.mentor-book{display:grid;grid-template-columns:minmax(0,.42fr) minmax(0,1fr);gap:clamp(16px,3vw,40px);align-items:start}
+.mentor-book figure{margin:0}
+.mentor-book img{width:100%;height:auto}
+.mentor-book-spreads{display:grid;gap:clamp(16px,2.5vw,28px)}
+.mentor-book-spreads figcaption{font-size:13px;margin-top:8px}
+@media (max-width:700px){.mentor-book{grid-template-columns:1fr}.mentor-book-cover{max-width:300px}}
+#book{scroll-margin-top:80px}
