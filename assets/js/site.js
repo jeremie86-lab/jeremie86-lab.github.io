@@ -75,6 +75,23 @@
       if(rt&&em)rt.value=em.value;});
   });
 
+  // Page titles (h1.display): each letter turns red under the cursor, then fades back to white
+  if(window.matchMedia&&matchMedia('(hover: hover) and (pointer: fine)').matches){
+    document.querySelectorAll('h1.display').forEach(function(h){
+      if(h.children.length||!h.textContent.trim())return;
+      var t=h.textContent,frag=document.createDocumentFragment(),sr=document.createElement('span');
+      sr.className='sr-only';sr.textContent=t.trim();frag.appendChild(sr);
+      t.split(/(\s+)/).forEach(function(part){
+        if(!part)return;
+        if(/^\s+$/.test(part)){frag.appendChild(document.createTextNode(' '));return;}
+        var w=document.createElement('span');w.className='hl-w';w.setAttribute('aria-hidden','true');
+        Array.from(part).forEach(function(ch){var l=document.createElement('span');l.className='hl';l.textContent=ch;w.appendChild(l);});
+        frag.appendChild(w);
+      });
+      h.textContent='';h.appendChild(frag);
+    });
+  }
+
   // Discourage casual image saving (right-click) — not a real protection
   document.addEventListener('contextmenu',function(e){if(e.target.tagName==='IMG')e.preventDefault();});
 })();
