@@ -380,7 +380,8 @@ body.nav-open{overflow:hidden}
 .buy,.more,.visit-links a{transition:opacity 100ms var(--ease-out)}
 
 /* Print details on series pages */
-.print-spec{margin:32px 0 0;max-width:900px}
+.print-spec{margin-top:clamp(40px,6vw,80px);padding-top:clamp(24px,3vw,36px);border-top:1px solid var(--line)}
+.print-spec>*{max-width:900px}
 .print-spec h2.label{margin:0 0 10px}
 .print-spec dl{margin:0;border-top:1px solid var(--line)}
 .print-spec dl>div{display:grid;grid-template-columns:minmax(120px,190px) 1fr;gap:4px 24px;padding:13px 0;border-bottom:1px solid var(--line)}
