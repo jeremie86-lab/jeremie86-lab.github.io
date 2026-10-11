@@ -31,7 +31,9 @@ body_class: page-series
       {% if pr.certificate %}<div><dt>Certificate</dt><dd>{{ pr.certificate }}</dd></div>{% endif %}
       {% if pr.framing %}<div><dt>Framing</dt><dd>{{ pr.framing }}</dd></div>{% endif %}
     </dl>
-    <p class="ps-more"><a href="{{ '/contact/' | relative_url }}?subject=Print&amp;work={{ page.title | url_encode }}">Enquire about prices and availability</a></p>
+    {% assign priced = pr.editions | where_exp: 'e', 'e.price' %}
+    {% if priced.size > 0 %}<p class="ps-note">Prices in CHF, framed and ready to hang. Shipping quoted separately.</p>{% endif %}
+    <p class="ps-more"><a href="{{ '/contact/' | relative_url }}?subject=Print&amp;work={{ page.title | url_encode }}">{% if priced.size > 0 %}Enquire about availability{% else %}Enquire about prices and availability{% endif %}</a></p>
   </section>{% endif %}
   <nav class="series-pager wrap" aria-label="Other series">
     {% for x in all_series %}{% if x.url == page.url %}
