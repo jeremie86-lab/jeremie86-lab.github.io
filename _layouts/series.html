@@ -14,7 +14,7 @@ body_class: page-series
       <h2 class="label" id="print-spec-h">The print</h2>
       <dl>
         {% if pr.medium %}<div><dt>Medium</dt><dd>{{ pr.medium }}</dd></div>{% endif %}
-        {% if pr.editions %}<div><dt>Sizes and editions</dt><dd><ul class="ps-ed">{% for e in pr.editions %}<li><span class="ps-size">{{ e.size }}</span>{% if e.edition %}<span>{{ e.edition }}</span>{% endif %}{% if e.finish %}<span>{{ e.finish }}</span>{% endif %}</li>{% endfor %}</ul></dd></div>{% endif %}
+        {% if pr.editions %}<div><dt>Sizes and editions</dt><dd><ul class="ps-ed">{% for e in pr.editions %}<li><span class="ps-size">{{ e.size }}</span>{% if e.edition %}<span>{{ e.edition }}</span>{% endif %}{% if e.finish %}<span>{{ e.finish }}</span>{% endif %}{% if e.price %}<span class="ps-price">{{ e.price }}</span>{% endif %}</li>{% endfor %}</ul></dd></div>{% endif %}
         {% if pr.signature %}<div><dt>Signature</dt><dd>{{ pr.signature }}</dd></div>{% endif %}
         {% if pr.certificate %}<div><dt>Certificate</dt><dd>{{ pr.certificate }}</dd></div>{% endif %}
         {% if pr.framing %}<div><dt>Framing</dt><dd>{{ pr.framing }}</dd></div>{% endif %}
