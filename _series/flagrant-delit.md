@@ -10,13 +10,15 @@ print:
   editions:
     - size: "50 × 75 cm each print"
       edition: "Edition of 5 + 2 AP"
+      finish: "Aluminium frame, on an aluminium subframe"
     - size: "60 × 90 cm each print"
       edition: "Edition of 5 + 2 AP"
+      finish: "Aluminium frame, on an aluminium subframe"
     - size: "70 × 105 cm each print"
       edition: "Edition of 5 + 2 AP"
+      finish: "Aluminium frame, on an aluminium subframe"
   signature: "Signed, titled and numbered on the verso"
   certificate: "Certificate of authenticity signed by the artist"
-  framing: "Unframed, mounted on an aluminium subframe, ready to hang; framing on request"
 photos:
   - src: /assets/img/flagrant-delit/flagrant-delit-01.jpg
     caption: "Who is watching whom"
