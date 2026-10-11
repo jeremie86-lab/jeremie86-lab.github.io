@@ -389,6 +389,7 @@ body.nav-open{overflow:hidden}
 .ps-ed{list-style:none;margin:0;padding:0;display:grid;gap:6px}
 .ps-ed li span+span::before{content:" · ";color:var(--line-strong)}
 .ps-size{color:var(--ink)}
+.ps-price{color:var(--ink);font-weight:600;white-space:nowrap}
 .ps-more{margin:14px 0 0;font-size:14px}
 .ps-more a{color:var(--ink-2);text-underline-offset:3px}
 @media (max-width:600px){.print-spec dl>div{grid-template-columns:1fr}}
