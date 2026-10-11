@@ -3,7 +3,7 @@ title: "Nuits Calmes"
 subtitle: "What the light lets slip"
 permalink: /series/nuits-calmes/
 order: 5
-year: "2020"
+year: "2019–2021"
 cover: /assets/img/dazzle/dazzle-04.jpg
 print:
   medium: "Archival pigment print on Hahnemühle Photo Baryta Bright White 350 g/m²"
@@ -11,6 +11,7 @@ print:
     - size: "20 × 30 cm, in a 30 × 40 cm mat"
       edition: "Edition of 5"
       finish: "Wooden frame"
+      price: "CHF 750"
     - size: "75 × 100 cm"
       edition: "Edition of 5 + 2 AP"
       finish: "Aluminium frame, on an aluminium subframe"

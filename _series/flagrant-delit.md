@@ -3,6 +3,7 @@ title: "Flagrant Délit"
 subtitle: "The street and the body, side by side"
 order: 1
 diptychs: true
+year: "2018–2025"
 cover: /assets/img/flagrant-delit/flagrant-delit-01.jpg
 print:
   medium: "Diptych: two archival pigment prints on Hahnemühle Photo Baryta Bright White 350 g/m², editioned as a pair"

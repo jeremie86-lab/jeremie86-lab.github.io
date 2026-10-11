@@ -2,6 +2,7 @@
 title: "Afterimage"
 subtitle: "Bodies in motion"
 order: 6
+year: "2018–2025"
 cover: /assets/img/afterimage/afterimage-02.jpg
 print:
   medium: "Archival pigment print on Hahnemühle Photo Baryta Bright White 350 g/m²"
