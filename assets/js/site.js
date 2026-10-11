@@ -14,7 +14,7 @@
   var items=[],idx=0,lb,img,cap,count,buy,lastFocus;
   function build(){
     lb=document.createElement('div');lb.className='lb';lb.hidden=true;lb.setAttribute('role','dialog');lb.setAttribute('aria-modal','true');lb.setAttribute('aria-label','Image viewer');
-    lb.innerHTML='<span class="lb-count"></span><figure class="lb-fig"><img class="lb-img" alt=""></figure><p class="lb-cap"></p><a class="lb-buy buy" hidden>Buy this work</a>'+
+    lb.innerHTML='<span class="lb-count"></span><figure class="lb-fig"><img class="lb-img" alt=""></figure><p class="lb-cap"></p><a class="lb-buy buy" hidden>Enquire about this work</a>'+
       '<button class="lb-close" type="button" aria-label="Close">×</button><button class="lb-prev" type="button" aria-label="Previous image">‹</button><button class="lb-next" type="button" aria-label="Next image">›</button>';
     document.body.appendChild(lb);
     img=lb.querySelector('.lb-img');cap=lb.querySelector('.lb-cap');count=lb.querySelector('.lb-count');buy=lb.querySelector('.lb-buy');
@@ -68,7 +68,7 @@
     var want=q.get('subject');if(want&&tp){Array.prototype.forEach.call(tp.options,function(o){if(o.value===want)tp.value=want;});}
     var work=q.get('work'),wf=f.querySelector('[data-work]'),wn=f.querySelector('[data-work-note]'),msg=f.querySelector('textarea[name="message"]');
     if(work&&wf){wf.value=work;wf.disabled=false;if(wn){wn.hidden=false;var t=wn.querySelector('[data-work-title]');if(t)t.textContent=work;}
-      if(msg&&!msg.value)msg.value='I would like to buy this work: '+work+'.\n\nSize or format I have in mind: \nWhere I am based: ';}
+      if(msg&&!msg.value)msg.value='I am interested in this work: '+work+'.\n\nSize or format I have in mind: \nWhere I am based: ';}
     f.addEventListener('submit',function(){
       var base=f.getAttribute('data-subject-base')||'Website enquiry';
       if(out)out.value=base+(tp?': '+tp.value:'')+(work&&wf&&!wf.disabled?' – '+work:'');
