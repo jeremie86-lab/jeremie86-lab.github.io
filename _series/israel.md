@@ -9,9 +9,10 @@ print:
   editions:
     - size: "60 × 90 cm"
       edition: "Edition of 5 + 2 AP"
+      finish: "Aluminium frame, on an aluminium subframe"
+      price: "CHF 1’750"
   signature: "Signed and numbered on the verso"
   certificate: "Certificate of authenticity signed by the artist"
-  framing: "Unframed, mounted on an aluminium subframe"
 photos:
   - src: /assets/img/israel/israel-01.jpg
     caption: ""

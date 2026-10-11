@@ -15,6 +15,11 @@ print:
     - size: "75 × 100 cm"
       edition: "Edition of 5 + 2 AP"
       finish: "Aluminium frame, on an aluminium subframe"
+      price: "CHF 2’500"
+    - size: "100 × 150 cm"
+      edition: "Edition of 5 + 2 AP"
+      finish: "Semi-matte acrylic face-mount, aluminium frame"
+      price: "CHF 3’500"
   signature: "Signed, titled and numbered on the verso"
   certificate: "Certificate of authenticity signed by the artist"
 photos:
