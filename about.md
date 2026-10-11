@@ -20,7 +20,7 @@ Since childhood, my eyes have lingered on what I was not supposed to see. I neve
 
 My flash is a confession. It writes me into the scene and tears from the moment what the eye lets slip: skin without artifice, a gesture tipping over, instinct rising to the surface. From burnt-out white to total black, I am not after the beautiful picture, but the emotion that makes me press the shutter.
 
-In the street, I go unseen. In the studio, I face something wild. It is the same chase, and she always has the last word: she looks me in the eye, then she looks at you. In front of my pictures, you are the one caught in *flagrant délit*.
+In the street, I go unseen. In the studio, I face something wild. It is the same chase, and she always has the last word: she looks me in the eye, then she looks at you. In front of my pictures, you are the one caught in the act.
 
 </div>
       <p class="statement-sign">Jeremy Spierer</p>
