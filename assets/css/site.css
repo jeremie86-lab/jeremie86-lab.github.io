@@ -378,3 +378,17 @@ body.nav-open{overflow:hidden}
 .g-open img,.lb-img,.card img{-webkit-touch-callout:none}
 .buy:active,.more:active,.visit-links a:active,.site-nav a:active{opacity:.6}
 .buy,.more,.visit-links a{transition:opacity 100ms var(--ease-out)}
+
+/* Print details on series pages */
+.print-spec{margin:28px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:0 28px;max-width:900px;border-top:1px solid var(--line)}
+.print-spec>div{padding:14px 0;border-bottom:1px solid var(--line)}
+.print-spec dt.label{margin:0 0 6px}
+.print-spec dd{margin:0;color:var(--ink-2);font-size:15px;line-height:1.45}
+
+/* Artworks shown in a black frame, as they would hang on a wall */
+.framed .g-open{background:transparent}
+.framed .g-open img{box-sizing:border-box;border:clamp(7px,0.85vw,13px) solid #000;box-shadow:0 0 0 1px #3d3a36,0 22px 44px -22px rgba(0,0,0,.95);outline:1px solid #1d1b19;outline-offset:calc(-1 * clamp(7px,0.85vw,13px))}
+.framed .dip-pair img{width:auto;max-width:100%;margin-inline:auto}
+.framed .dip-pair .g-open{display:flex;justify-content:center}
+.framed .gallery{column-gap:clamp(14px,1.8vw,26px)}
+.framed .g-item{margin-bottom:clamp(14px,1.8vw,26px)}
