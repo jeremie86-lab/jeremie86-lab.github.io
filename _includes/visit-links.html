@@ -2,13 +2,14 @@
 {%- assign e = include.e -%}
 {%- if e -%}{%- if e.address and e.address != '' or e.opening_time and e.opening_time != '' -%}
 {%- capture gstart %}{{ e.start | date: '%Y%m%d' }}T{{ e.opening_time | remove: ':' }}00{% endcapture -%}
+{%- if e.opening_end and e.opening_end != '' -%}{%- capture gend %}{{ e.start | date: '%Y%m%d' }}T{{ e.opening_end | remove: ':' }}00{% endcapture -%}{%- else -%}{%- assign gend = gstart -%}{%- endif -%}
 {%- capture gtitle %}{{ e.title }} · Opening{% endcapture -%}
 {%- capture gloc %}{{ e.venue }}, {{ e.address }}{% endcapture -%}
 <p class="visit-links">
   {%- if e.opening_time and e.opening_time != '' -%}
   <span class="vl-cal" data-hide-after="{{ e.start | date: '%Y-%m-%d' }}">
     <a href="{{ '/openings.ics' | relative_url }}">Add to calendar</a>
-    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text={{ gtitle | url_encode }}&amp;dates={{ gstart }}/{{ gstart }}&amp;ctz=Europe/Zurich&amp;location={{ gloc | url_encode }}&amp;details={{ e.dates | url_encode }}" rel="noopener" target="_blank">Google Calendar</a>
+    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text={{ gtitle | url_encode }}&amp;dates={{ gstart }}/{{ gend }}&amp;ctz=Europe/Zurich&amp;location={{ gloc | url_encode }}&amp;details={{ e.dates | url_encode }}" rel="noopener" target="_blank">Google Calendar</a>
   </span>
   {%- endif -%}
   {%- if e.address and e.address != '' %}
