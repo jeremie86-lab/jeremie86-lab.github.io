@@ -30,7 +30,8 @@ END:VTIMEZONE
 UID:{{ e.slug }}-opening@{{ site.url | remove: 'https://' | remove: 'http://' }}
 DTSTAMP:{{ site.time | date: '%Y%m%dT%H%M%S' }}Z
 DTSTART;TZID=Europe/Zurich:{{ e.start | date: '%Y%m%d' }}T{{ e.opening_time | remove: ':' }}00
-SUMMARY:{{ e.title }} · Opening{% if e.with %} ({{ e.with }}){% endif %}
+{% if e.opening_end and e.opening_end != '' %}DTEND;TZID=Europe/Zurich:{{ e.start | date: '%Y%m%d' }}T{{ e.opening_end | remove: ':' }}00
+{% endif %}SUMMARY:{{ e.title }} · Opening{% if e.with %} ({{ e.with }}){% endif %}
 LOCATION:{{ e.venue | replace: ',', '\,' }}\, {{ e.address | replace: ',', '\,' }}
 DESCRIPTION:{{ e.kind }}. {{ e.dates | replace: ',', '\,' }}.
 URL:{{ '/exhibitions/' | absolute_url }}#{{ e.slug }}
