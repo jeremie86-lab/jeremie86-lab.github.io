@@ -391,6 +391,10 @@ body.nav-open{overflow:hidden}
 .ps-size{color:var(--ink)}
 .ps-price{color:var(--ink);font-weight:600;white-space:nowrap}
 .ps-more{margin:14px 0 0;font-size:14px}
+.studio{margin-top:clamp(40px,6vw,80px);padding-top:clamp(24px,3vw,36px);border-top:1px solid var(--line)}
+.studio h2.label{margin:0 0 18px}
+.studio .gallery{columns:3 260px}
+@media (max-width:600px){.studio .gallery{columns:2 140px}}
 .ps-more a{color:var(--ink-2);text-underline-offset:3px}
 @media (max-width:600px){.print-spec dl>div{grid-template-columns:1fr}}
 
