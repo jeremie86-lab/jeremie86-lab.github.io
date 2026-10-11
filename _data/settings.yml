@@ -14,8 +14,10 @@ offers:
     text: "Hand-signed prints in small editions, available on request and through Galerie Fahid Taghavi."
     link: /prints/
   - title: "Commissions"
+    home: false
     text: "Portraits, editorial and event photography, and artistic collaborations with brands."
   - title: "Private lessons"
+    home: false
     text: "One-to-one photography lessons in Geneva: street, portrait, working with a model, boudoir and the nude. Your dream shoot, ready to shoot."
     link: /lessons/
 email: "jeremy@spierer.ch"
