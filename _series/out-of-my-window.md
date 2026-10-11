@@ -4,7 +4,7 @@ subtitle: "Geneva, seen from one window"
 order: 19
 archive: true
 year: "2021–2022"
-cover: /assets/img/out-of-my-window/out-of-my-window-13.jpg
+cover: /assets/img/out-of-my-window/out-of-my-window-12.jpg
 print:
   medium: "Archival pigment print on Hahnemühle Photo Baryta Bright White 350 g/m²"
   editions:
@@ -52,10 +52,6 @@ photos:
   - src: /assets/img/out-of-my-window/out-of-my-window-18.jpg
     caption: ""
   - src: /assets/img/out-of-my-window/out-of-my-window-19.jpg
-    caption: ""
-  - src: /assets/img/out-of-my-window/out-of-my-window-20.jpg
-    caption: ""
-  - src: /assets/img/out-of-my-window/out-of-my-window-21.jpg
     caption: ""
 ---
 
