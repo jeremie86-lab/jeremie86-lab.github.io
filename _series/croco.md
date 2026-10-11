@@ -19,11 +19,14 @@ photos:
   - src: /assets/img/croco/croco-06.jpg
     caption: "Untitled. Mixed media on canvas, paint and photographic collage, 100 × 80 cm. CHF 4’800"
   - src: /assets/img/croco/croco-07.jpg
-    caption: "In the studio"
+    caption: ""
+    studio: true
   - src: /assets/img/croco/croco-08.jpg
-    caption: "In the studio"
+    caption: ""
+    studio: true
   - src: /assets/img/croco/croco-09.jpg
-    caption: "The studio: palettes, brushes and cameras"
+    caption: "Palettes, brushes and cameras"
+    studio: true
 ---
 
 Jeremy Spierer's black-and-white flash photographs on brushed aluminium, worked over in oil by the painter Tiphaine Koltes. Red seeps into the metal; flesh curls beneath the matter. These collaborative works sit at the centre of CROCO. Several were first shown at MAZE Art Gstaad and MAZE Art St. Moritz in early 2026, ahead of the exhibition's Geneva opening on 17 November 2026, with Galerie Fahid Taghavi at the Salle Centrale de la Madeleine.
