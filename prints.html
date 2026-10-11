@@ -2,7 +2,7 @@
 layout: default
 title: Prints
 permalink: /prints/
-description: "Hand-signed prints and works by Jeremy Spierer, available on request and through Galerie Fahid Taghavi, Geneva."
+description: "Hand-signed prints and works by Jeremy Spierer, available directly and through Galerie Fahid Taghavi, Geneva."
 ---
 {% assign s = site.data.settings %}
 {% assign croco = site.series | where: 'slug', 'croco' | first %}
@@ -10,7 +10,7 @@ description: "Hand-signed prints and works by Jeremy Spierer, available on reque
 {% assign ce = site.exhibitions | where: 'slug', s.hero_exhibition | first %}
 <section class="page-head wrap">
   <h1 class="display">Prints</h1>
-  <p class="lead">Hand-signed prints in small editions, available on request and through <a href="{{ s.gallery_url }}" rel="noopener" target="_blank">{{ s.gallery_name }}</a>. Prices, formats and editions on request.</p>
+  <p class="lead">Hand-signed prints in small editions, available directly and through <a href="{{ s.gallery_url }}" rel="noopener" target="_blank">{{ s.gallery_name }}</a>. Sizes, editions and prices are listed at the bottom of each series page.</p>
 </section>
 
 {% if croco %}
@@ -40,12 +40,38 @@ description: "Hand-signed prints and works by Jeremy Spierer, available on reque
   </div>
 </section>
 
+<section class="block wrap" aria-labelledby="h-prices">
+  <div class="block-head">
+    <h2 id="h-prices" class="h2">Edition prices</h2>
+  </div>
+  <p class="section-note">One price per size, whatever the series. Archival pigment prints on Hahnemühle Photo Baryta, signed, numbered, with a certificate of authenticity. Prices in CHF, framed and ready to hang; shipping quoted separately.</p>
+  <div class="price-wrap">
+    <div>
+  <table class="price-grid">
+      <thead><tr><th scope="col">Size</th><th scope="col">Finish</th><th scope="col">Price</th></tr></thead>
+      <tbody>
+        <tr><td>20 × 30 cm</td><td>In a 30 × 40 cm mat, wooden frame</td><td>CHF&nbsp;750</td></tr>
+        <tr><td>50 × 75 cm</td><td>Aluminium frame, on an aluminium subframe</td><td>CHF&nbsp;1’200</td></tr>
+        <tr><td>60 × 90 cm</td><td>Aluminium frame, on an aluminium subframe</td><td>CHF&nbsp;1’750</td></tr>
+        <tr><td>75 × 100 cm</td><td>Aluminium frame, on an aluminium subframe</td><td>CHF&nbsp;2’500</td></tr>
+        <tr><td>100 × 150 cm</td><td>Semi-matte acrylic face-mount, aluminium frame</td><td>CHF&nbsp;3’500</td></tr>
+      </tbody>
+    </table>
+      <p class="section-note ps-after">Diptychs (In the Act) are priced per pair. Unique pieces, such as the 120 × 180 cm prints, and the CROCO works are priced individually. Not every size is offered for every series: see each series page.</p>
+    </div>
+    <figure class="in-situ">
+      <img src="{{ '/assets/img/prints/in-situ-backstage-120x180.jpg' | relative_url }}" alt="A large black-and-white print from the Backstage series hanging in a living room, above a sofa" loading="lazy" decoding="async" width="1440" height="1800">
+      <figcaption><a href="{{ '/series/backstage/' | relative_url }}">Backstage</a>, 120 × 180 cm, semi-matte acrylic face-mount, in a private home</figcaption>
+    </figure>
+  </div>
+</section>
+
 <section class="steps wrap" aria-labelledby="h-how">
   <h2 id="h-how" class="h2">How to enquire</h2>
   <ol class="steps-list">
     <li><strong>Choose a photograph.</strong> Click “Enquire about this work” under any image, in the series or in the viewer. Sizes and editions are listed on each series page.</li>
     <li><strong>Send the short form.</strong> The work is already filled in: just add the size you have in mind and where you are based.</li>
-    <li><strong>I reply</strong> with availability and price.</li>
+    <li><strong>I reply</strong> to confirm availability, shipping and payment.</li>
   </ol>
   <a class="btn" href="{{ '/contact/' | relative_url }}?subject=Print">Enquire about a print</a>
 </section>
