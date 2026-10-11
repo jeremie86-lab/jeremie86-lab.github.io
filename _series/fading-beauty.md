@@ -3,7 +3,7 @@ title: "Fading Beauty"
 subtitle: "Urban decay"
 order: 10
 archive: true
-cover: /assets/img/fading-beauty/fading-beauty-06.jpg
+cover: /assets/img/fading-beauty/fading-beauty-01.jpg
 print:
   medium: "Archival pigment print on Hahnemühle Photo Baryta Bright White 350 g/m²"
   editions:
