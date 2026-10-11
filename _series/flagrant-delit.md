@@ -1,6 +1,7 @@
 ---
-title: "Flagrant Délit"
+title: "In the Act"
 subtitle: "The street and the body, side by side"
+permalink: /series/in-the-act/
 order: 1
 diptychs: true
 year: "2018–2025"
