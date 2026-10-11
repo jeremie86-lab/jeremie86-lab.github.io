@@ -392,3 +392,5 @@ body.nav-open{overflow:hidden}
 .framed .dip-pair .g-open{display:flex;justify-content:center}
 .framed .gallery{column-gap:clamp(14px,1.8vw,26px)}
 .framed .g-item{margin-bottom:clamp(14px,1.8vw,26px)}
+.offers:has(> .offer:only-child){grid-template-columns:minmax(0,1fr)}
+.offer:only-child{max-width:560px}
