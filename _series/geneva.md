@@ -3,7 +3,7 @@ title: "Geneva"
 subtitle: "The lake city at street level"
 order: 18
 archive: true
-year: "2017–2019"
+year: "2013–2019"
 cover: /assets/img/geneva/geneva-13.jpg
 print:
   medium: "Archival pigment print on Hahnemühle Photo Baryta Bright White 350 g/m²"
@@ -57,6 +57,8 @@ photos:
     caption: ""
   - src: /assets/img/geneva/geneva-21.jpg
     caption: ""
+  - src: /assets/img/geneva/geneva-22.jpg
+    caption: ""
 ---
 
-Geneva in colour, between 2017 and 2019: the Jet d'eau and the flower clock, the quays and the lake baths, selfie sticks, summer crowds and late light. The postcard city, taken at street level.
+Geneva between 2013 and 2019: the flower clock and the quays, the lake baths, selfie sticks, summer crowds, late light and an old café. The postcard city, taken at street level.
