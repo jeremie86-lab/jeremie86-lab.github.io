@@ -3,6 +3,7 @@ title: "CROCO"
 subtitle: "With Tiphaine Koltes"
 order: 2
 year: "2026"
+frame: false
 cover: /assets/img/croco/croco-01.jpg
 photos:
   - src: /assets/img/croco/croco-01.jpg
