@@ -42,7 +42,7 @@ body_class: page-home
 </section>
 
 <section class="offers wrap" aria-label="What I offer">
-  {% for o in s.offers %}
+  {% for o in s.offers %}{% if o.home == false %}{% continue %}{% endif %}
   <div class="offer">
     <h3 class="h3">{{ o.title }}</h3>
     <p>{{ o.text }}</p>

@@ -21,7 +21,7 @@ description: "Hand-signed prints and works by Jeremy Spierer, available on reque
     <a class="more" href="{{ croco.url | relative_url }}">See the series</a>
   </div>
   <p class="section-note">Collaborative works with the painter Tiphaine Koltes{% if ce %}, shown in <a href="{{ '/exhibitions/' | relative_url }}#{{ ce.slug }}">CROCO</a> at {{ ce.venue }}{% endif %}. Works are available for purchase ahead of the opening. Reservations are taken on a first-come, first-served basis and confirmed in writing.</p>
-  <div class="framed">{% include gallery.html photos=works title='CROCO' buy=true %}</div>
+  {% include gallery.html photos=works title='CROCO' buy=true %}
 </section>
 {% endif %}
 
