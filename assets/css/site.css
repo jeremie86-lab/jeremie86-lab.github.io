@@ -1,7 +1,7 @@
 /* Jeremy Spierer — site styles */
 :root{
   color-scheme: dark;
-  --bg:#0b0b0b; --bg-2:#141312; --ink:#f1efec; --ink-2:#cfcac3; --muted:#8f8a83; --line:#272523; --red:#d0202f; --red-text:#e5404c; --line-strong:#6a655f;
+  --bg:#0b0b0b; --bg-2:#141312; --ink:#f1efec; --ink-2:#cfcac3; --muted:#8f8a83; --line:#272523; --red:#d0202f; --red-text:#e5404c; --line-strong:#6a655f; --red-paint:#f01414;
   --display:"Archivo", "Helvetica Neue", Arial, sans-serif;
   --body:"Karla", "Helvetica Neue", Arial, sans-serif;
   --gutter:clamp(16px,4vw,48px);
@@ -396,7 +396,7 @@ body.nav-open{overflow:hidden}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 .hl-w{white-space:nowrap}
 .hl{transition:color 900ms ease}
-@media (hover:hover) and (pointer:fine){.hl:hover{color:var(--red);transition-duration:60ms}}
+@media (hover:hover) and (pointer:fine){.hl:hover{color:var(--red-paint);transition-duration:60ms}}
 @media (prefers-reduced-motion:reduce){.hl{transition-duration:250ms}}
 .studio{margin-top:clamp(40px,6vw,80px);padding-top:clamp(24px,3vw,36px);border-top:1px solid var(--line)}
 .studio h2.label{margin:0 0 18px}
