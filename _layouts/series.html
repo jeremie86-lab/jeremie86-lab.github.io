@@ -10,14 +10,17 @@ body_class: page-series
     {% if page.subtitle %}<p class="series-sub">{{ page.subtitle }}</p>{% endif %}
     <div class="series-text">{{ content }}</div>
     {% assign pr = page.print %}{% if pr %}
-    <dl class="print-spec" aria-label="Print details">
-      {% if pr.print %}<div><dt class="label">Print</dt><dd>{{ pr.print }}</dd></div>{% endif %}
-      {% if pr.paper %}<div><dt class="label">Paper</dt><dd>{{ pr.paper }}</dd></div>{% endif %}
-      {% if pr.format %}<div><dt class="label">Format</dt><dd>{{ pr.format }}</dd></div>{% endif %}
-      {% if pr.size %}<div><dt class="label">Size</dt><dd>{{ pr.size }}</dd></div>{% endif %}
-      {% if pr.edition %}<div><dt class="label">Edition</dt><dd>{{ pr.edition }}</dd></div>{% endif %}
-      {% if pr.notes %}<div><dt class="label">Details</dt><dd>{{ pr.notes }}</dd></div>{% endif %}
-    </dl>{% endif %}
+    <section class="print-spec" aria-labelledby="print-spec-h">
+      <h2 class="label" id="print-spec-h">The print</h2>
+      <dl>
+        {% if pr.medium %}<div><dt>Medium</dt><dd>{{ pr.medium }}</dd></div>{% endif %}
+        {% if pr.editions %}<div><dt>Sizes and editions</dt><dd><ul class="ps-ed">{% for e in pr.editions %}<li><span class="ps-size">{{ e.size }}</span>{% if e.edition %}<span>{{ e.edition }}</span>{% endif %}{% if e.finish %}<span>{{ e.finish }}</span>{% endif %}</li>{% endfor %}</ul></dd></div>{% endif %}
+        {% if pr.signature %}<div><dt>Signature</dt><dd>{{ pr.signature }}</dd></div>{% endif %}
+        {% if pr.certificate %}<div><dt>Certificate</dt><dd>{{ pr.certificate }}</dd></div>{% endif %}
+        {% if pr.framing %}<div><dt>Framing</dt><dd>{{ pr.framing }}</dd></div>{% endif %}
+      </dl>
+      <p class="ps-more"><a href="{{ '/contact/' | relative_url }}?subject=Print&amp;work={{ page.title | url_encode }}">Enquire about prices and availability</a></p>
+    </section>{% endif %}
     {% assign related = site.exhibitions | where: 'related_series', page.slug %}
     {% if related.size > 0 %}<p class="series-links">Shown in {% for e in related %}<a href="{{ '/exhibitions/' | relative_url }}#{{ e.slug }}">{{ e.title }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</p>{% endif %}
   </header>
