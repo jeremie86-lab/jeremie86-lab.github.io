@@ -4,7 +4,7 @@ subtitle: "The lake city at street level"
 order: 18
 archive: true
 year: "2017–2019"
-cover: /assets/img/geneva/geneva-11.jpg
+cover: /assets/img/geneva/geneva-13.jpg
 print:
   medium: "Archival pigment print on Hahnemühle Photo Baryta Bright White 350 g/m²"
   editions:
@@ -56,10 +56,6 @@ photos:
   - src: /assets/img/geneva/geneva-20.jpg
     caption: ""
   - src: /assets/img/geneva/geneva-21.jpg
-    caption: ""
-  - src: /assets/img/geneva/geneva-22.jpg
-    caption: ""
-  - src: /assets/img/geneva/geneva-23.jpg
     caption: ""
 ---
 
