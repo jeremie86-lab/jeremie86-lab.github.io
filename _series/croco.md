@@ -2,22 +2,22 @@
 title: "CROCO"
 subtitle: "With Tiphaine Koltes"
 order: 2
-year: "2026"
 frame: false
+year: "2026"
 cover: /assets/img/croco/croco-01.jpg
 photos:
   - src: /assets/img/croco/croco-01.jpg
-    caption: "CROCO. Oil on photographic print, brushed aluminium, 135 × 90 cm"
+    caption: "CROCO. Oil on photographic print, brushed aluminium, 135 × 90 cm. CHF 6’800"
   - src: /assets/img/croco/croco-02.jpg
-    caption: "Untitled. Oil on photographic print, brushed aluminium, 90 × 60 cm"
+    caption: "Untitled. Oil on photographic print, brushed aluminium, 90 × 60 cm. CHF 5’500"
   - src: /assets/img/croco/croco-03.jpg
-    caption: "Untitled. Oil on photographic print, brushed aluminium, 90 × 60 cm"
+    caption: "Untitled. Oil on photographic print, brushed aluminium, 90 × 60 cm. CHF 5’500"
   - src: /assets/img/croco/croco-04.jpg
-    caption: "Untitled. Oil on photographic print, brushed aluminium, 90 × 60 cm"
+    caption: "Untitled. Oil on photographic print, brushed aluminium, 90 × 60 cm. CHF 3’800"
   - src: /assets/img/croco/croco-05.jpg
-    caption: "Untitled. Oil on photographic print, brushed aluminium, 90 × 60 cm"
+    caption: "Untitled. Oil on photographic print, brushed aluminium, 90 × 60 cm. CHF 3’800"
   - src: /assets/img/croco/croco-06.jpg
-    caption: "Untitled. Mixed media on canvas, paint and photographic collage, 100 × 80 cm"
+    caption: "Untitled. Mixed media on canvas, paint and photographic collage, 100 × 80 cm. CHF 4’800"
   - src: /assets/img/croco/croco-07.jpg
     caption: "In the studio"
   - src: /assets/img/croco/croco-08.jpg

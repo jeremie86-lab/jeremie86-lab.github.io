@@ -4,6 +4,14 @@ subtitle: "Sauvage"
 order: 12
 archive: true
 cover: /assets/img/wild-camargue/wild-camargue-01.jpg
+print:
+  medium: "Archival pigment print on Hahnemühle Photo Baryta Bright White 350 g/m²"
+  editions:
+    - size: "60 × 90 cm"
+      edition: "Edition of 5 + 2 AP"
+  signature: "Signed and numbered on the verso"
+  certificate: "Certificate of authenticity signed by the artist"
+  framing: "Unframed, mounted on an aluminium subframe"
 photos:
   - src: /assets/img/wild-camargue/wild-camargue-01.jpg
     caption: ""

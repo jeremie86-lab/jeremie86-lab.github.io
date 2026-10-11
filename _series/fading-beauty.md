@@ -2,7 +2,20 @@
 title: "Fading Beauty"
 subtitle: "Urban decay"
 order: 10
+archive: true
 cover: /assets/img/fading-beauty/fading-beauty-06.jpg
+print:
+  medium: "Archival pigment print on Hahnemühle Photo Baryta Bright White 350 g/m²"
+  editions:
+    - size: "50 × 75 cm"
+      edition: "Edition of 5 + 2 AP"
+    - size: "70 × 105 cm"
+      edition: "Edition of 5 + 2 AP"
+    - size: "120 × 180 cm"
+      edition: "Unique piece"
+  signature: "Signed, titled and numbered on the verso"
+  certificate: "Certificate of authenticity signed by the artist"
+  framing: "Mounted under 3 mm acrylic glass, on an aluminium subframe; framing on request"
 photos:
   - src: /assets/img/fading-beauty/fading-beauty-01.jpg
     caption: ""
@@ -48,7 +61,6 @@ photos:
     caption: ""
   - src: /assets/img/fading-beauty/fading-beauty-22.jpg
     caption: ""
-archive: true
 ---
 
 Beauty images in a damaged state, worn down by their street life. Torn posters from Geneva, Tel Aviv, Kyiv, Barcelona and New York become symbols of fading beauty, in a rather ironic way. The city writes over itself; the photographer only frames the aesthetic of damage. First shown as Urban Decay, in dialogue with textile designer Eliran Ashraf.

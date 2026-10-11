@@ -3,6 +3,14 @@ title: "Afterimage"
 subtitle: "Bodies in motion"
 order: 6
 cover: /assets/img/afterimage/afterimage-02.jpg
+print:
+  medium: "Archival pigment print on Hahnemühle Photo Baryta Bright White 350 g/m²"
+  editions:
+    - size: "70 × 105 cm"
+      edition: "Edition of 5 + 2 AP"
+      finish: "Aluminium frame, on an aluminium subframe"
+  signature: "Signed, titled and numbered on the verso"
+  certificate: "Certificate of authenticity signed by the artist"
 photos:
   - src: /assets/img/afterimage/afterimage-01.jpg
     caption: ""

@@ -4,6 +4,14 @@ subtitle: "From the hills of Jerusalem to the beaches of Tel Aviv"
 order: 16
 archive: true
 cover: /assets/img/israel/israel-01.jpg
+print:
+  medium: "Archival pigment print on Hahnemühle Photo Baryta Bright White 350 g/m²"
+  editions:
+    - size: "60 × 90 cm"
+      edition: "Edition of 5 + 2 AP"
+  signature: "Signed and numbered on the verso"
+  certificate: "Certificate of authenticity signed by the artist"
+  framing: "Unframed, mounted on an aluminium subframe"
 photos:
   - src: /assets/img/israel/israel-01.jpg
     caption: ""

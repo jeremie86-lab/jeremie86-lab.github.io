@@ -4,6 +4,18 @@ subtitle: "The street and the body, side by side"
 order: 1
 diptychs: true
 cover: /assets/img/flagrant-delit/flagrant-delit-01.jpg
+print:
+  medium: "Diptych: two archival pigment prints on Hahnemühle Photo Baryta Bright White 350 g/m², editioned as a pair"
+  editions:
+    - size: "50 × 75 cm each print"
+      edition: "Edition of 5 + 2 AP"
+    - size: "60 × 90 cm each print"
+      edition: "Edition of 5 + 2 AP"
+    - size: "70 × 105 cm each print"
+      edition: "Edition of 5 + 2 AP"
+  signature: "Signed, titled and numbered on the verso"
+  certificate: "Certificate of authenticity signed by the artist"
+  framing: "Unframed, mounted on an aluminium subframe, ready to hang; framing on request"
 photos:
   - src: /assets/img/flagrant-delit/flagrant-delit-01.jpg
     caption: "Who is watching whom"
@@ -50,4 +62,5 @@ photos:
   - src: /assets/img/flagrant-delit/flagrant-delit-22.jpg
     caption: ""
 ---
+
 Each diptych sets the street beside the body. On one side, the world caught unawares; on the other, a body that knows it is being looked at. The same flash, the same hard black and white, the same chase. A rose answers a hip, a crumpled sheet answers skin, a dog bares its teeth while a woman's hair lashes the air. Caught in the act: the viewer included.
