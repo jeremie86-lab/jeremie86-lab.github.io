@@ -8,6 +8,7 @@
 <meta name="description" content="{{ page.description | default: page.subtitle | default: site.description | escape }}">
 {% if page.url == '/' %}{% assign ogt = s.name | append: ' · ' | append: s.tagline %}{% else %}{% assign ogt = page.title | append: ' · ' | append: s.name %}{% endif %}
 <link rel="canonical" href="{{ page.url | absolute_url }}">
+<meta name="google-site-verification" content="lDktDi2QQ7yNJkEzmZQzweJx6I618VrntrYV-PvQjP0">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="{{ s.name | escape }}">
 <meta property="og:title" content="{{ ogt | escape }}">
