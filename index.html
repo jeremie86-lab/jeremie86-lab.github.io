@@ -2,6 +2,7 @@
 layout: default
 title: Home
 body_class: page-home
+alt_fr: /fr/
 ---
 {% assign s = site.data.settings %}
 {% assign all_series = site.series | sort: 'order' | where_exp: 'x', 'x.archive != true' %}
@@ -27,7 +28,7 @@ body_class: page-home
   <div class="cards">
     {% for x in all_series %}
     <a class="card" href="{{ x.url | relative_url }}">
-      <img src="{{ x.cover | default: x.photos[0].src | relative_url }}" alt="" loading="lazy" decoding="async">
+      <img src="{{ x.cover | default: x.photos[0].src | relative_url }}" alt="{{ x.title | escape }}, a series by Jeremy Spierer" loading="lazy" decoding="async">
       <span class="card-t">{{ x.title }}</span>
       {% if x.subtitle %}<span class="card-s">{{ x.subtitle }}</span>{% endif %}
     </a>
@@ -59,7 +60,7 @@ body_class: page-home
   <div class="expo-cards">
     {% for e in expos limit: 3 %}
     <a class="expo-card" href="{{ '/exhibitions/' | relative_url }}#{{ e.slug }}">
-      {% if e.cover %}<img src="{{ e.cover | relative_url }}" alt="" loading="lazy" decoding="async">{% endif %}
+      {% if e.cover %}<img src="{{ e.cover | relative_url }}" alt="{{ e.title | escape }}, exhibition, {{ e.city | escape }}" loading="lazy" decoding="async">{% endif %}
       <span class="label">{{ e.kind }} · {{ e.city }}</span>
       <span class="expo-t">{{ e.title }}</span>
       <span class="muted">{{ e.dates }}</span>

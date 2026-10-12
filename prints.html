@@ -3,6 +3,7 @@ layout: default
 title: Prints
 permalink: /prints/
 description: "Hand-signed prints and works by Jeremy Spierer, available directly and through Galerie Fahid Taghavi, Geneva."
+alt_fr: /fr/tirages/
 ---
 {% assign s = site.data.settings %}
 {% assign croco = site.series | where: 'slug', 'croco' | first %}
@@ -32,7 +33,7 @@ description: "Hand-signed prints and works by Jeremy Spierer, available directly
   <div class="cards cards-lg">
     {% for x in others %}
     <a class="card" href="{{ x.url | relative_url }}">
-      <img src="{{ x.cover | default: x.photos[0].src | relative_url }}" alt="" loading="lazy" decoding="async">
+      <img src="{{ x.cover | default: x.photos[0].src | relative_url }}" alt="{{ x.title | escape }}, a series by Jeremy Spierer" loading="lazy" decoding="async">
       <span class="card-t">{{ x.title }}</span>
       {% if x.subtitle %}<span class="card-s">{{ x.subtitle }}</span>{% endif %}
     </a>

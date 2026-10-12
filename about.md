@@ -1,9 +1,11 @@
 ---
 layout: default
 title: About
+seo_title: "About Jeremy Spierer, artist photographer in Geneva"
 permalink: /about/
 portrait: /assets/img/about/jeremy-spierer.jpg
 portrait_caption: "Jeremy Spierer in the studio, 2026"
+alt_fr: /fr/a-propos/
 ---
 <section class="about wrap wide">
   <figure class="about-portrait">
