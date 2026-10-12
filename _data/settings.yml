@@ -1,6 +1,6 @@
 # Réglages généraux du site — modifiables dans Pages CMS (« Settings »)
 name: "Jeremy Spierer"
-tagline: "Photographer · Geneva"
+tagline: "Photographer and artist · Geneva"
 hero_image: /assets/img/croco/croco-01.jpg
 hero_kicker: "Upcoming exhibition"
 hero_title: "CROCO"
@@ -27,3 +27,9 @@ gallery_url: "https://galeriefahidtaghavi.ch/jeremy-spierer/"
 artsy_url: "https://www.artsy.net/partner/galerie-fahid-taghavi"
 contact_form: true      # formulaire sur la page Contact (envoyé par FormSubmit vers l'adresse email ci-dessus)
 goatcounter: ""         # code GoatCounter (ex. "jeremyspierer") pour les statistiques de visite ; vide = désactivé
+google_site_verification: "lDktDi2QQ7yNJkEzmZQzweJx6I618VrntrYV-PvQjP0"   # code fourni par Google Search Console (balise HTML), à coller ici
+same_as:                       # profils officiels, pour Google (données structurées)
+  - "https://www.instagram.com/jeremyspierer/"
+  - "https://www.facebook.com/jeremyspiererphotography/"
+  - "https://www.artsy.net/artist/jeremy-spierer"
+  - "https://galeriefahidtaghavi.ch/en/jeremy-spierer/"
