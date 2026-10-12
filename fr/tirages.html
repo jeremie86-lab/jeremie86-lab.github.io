@@ -1,0 +1,62 @@
+---
+layout: default
+lang: fr
+title: Tirages d’art
+seo_title: "Tirages d’art signés · Jeremy Spierer, photographe à Genève"
+permalink: /fr/tirages/
+alt_en: /prints/
+description: "Tirages photographiques d’art signés et numérotés de Jeremy Spierer, en petites éditions, disponibles directement et auprès de la Galerie Fahid Taghavi à Genève. Prix par format."
+---
+{% assign s = site.data.settings %}
+{% assign others = site.series | where_exp: 'x', "x.slug != 'croco'" | where_exp: 'x', 'x.published != false' | sort: 'order' %}
+<section class="page-head wrap">
+  <h1 class="display">Tirages d’art</h1>
+  <p class="lead">Tirages signés en petites éditions, disponibles directement et auprès de la <a href="{{ s.gallery_url }}" rel="noopener" target="_blank">{{ s.gallery_name }}</a>. Les formats, éditions et prix figurent en bas de chaque page de série.</p>
+</section>
+
+<section class="block wrap" aria-labelledby="h-prices">
+  <div class="block-head"><h2 id="h-prices" class="h2">Prix des éditions</h2></div>
+  <p class="section-note">Un prix par format, quelle que soit la série. Tirages pigmentaires d’archive sur Hahnemühle Photo Baryta, signés, numérotés, avec certificat d’authenticité. Prix en CHF, encadré et prêt à accrocher ; livraison en sus, sur devis.</p>
+  <div class="price-wrap">
+    <div>
+    <table class="price-grid">
+      <thead><tr><th scope="col">Format</th><th scope="col">Finition</th><th scope="col">Prix</th></tr></thead>
+      <tbody>
+        <tr><td>20 × 30 cm</td><td>Passe-partout 30 × 40 cm, cadre en bois</td><td>CHF&nbsp;750</td></tr>
+        <tr><td>50 × 75 cm</td><td>Cadre aluminium, sur châssis aluminium</td><td>CHF&nbsp;1’200</td></tr>
+        <tr><td>60 × 90 cm</td><td>Cadre aluminium, sur châssis aluminium</td><td>CHF&nbsp;1’750</td></tr>
+        <tr><td>75 × 100 cm</td><td>Cadre aluminium, sur châssis aluminium</td><td>CHF&nbsp;2’500</td></tr>
+        <tr><td>100 × 150 cm</td><td>Contrecollage acrylique semi-mat, cadre aluminium</td><td>CHF&nbsp;3’500</td></tr>
+      </tbody>
+    </table>
+    <p class="section-note ps-after">Les diptyques (In the Act) sont vendus par paire. Les pièces uniques, comme les tirages 120 × 180 cm, et les œuvres CROCO ont un prix propre. Tous les formats ne sont pas proposés pour chaque série : voir la page de chaque série.</p>
+    </div>
+    <figure class="in-situ">
+      <img src="{{ '/assets/img/prints/in-situ-backstage-120x180.jpg' | relative_url }}" alt="Grand tirage noir et blanc de la série Backstage accroché dans un salon, au-dessus d’un canapé" loading="lazy" decoding="async" width="1440" height="1800">
+      <figcaption><a href="{{ '/series/backstage/' | relative_url }}" hreflang="en">Backstage</a>, 120 × 180 cm, contrecollage acrylique semi-mat, chez un particulier</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="block wrap wide" aria-labelledby="h-series">
+  <div class="block-head"><h2 id="h-series" class="h2">Les séries</h2></div>
+  <div class="cards cards-lg">
+    {% for x in others %}
+    <a class="card" href="{{ x.url | relative_url }}" hreflang="en">
+      <img src="{{ x.cover | default: x.photos[0].src | relative_url }}" alt="{{ x.title | escape }}, série de Jeremy Spierer" loading="lazy" decoding="async">
+      <span class="card-t">{{ x.title }}</span>
+      {% if x.subtitle %}<span class="card-s" lang="en">{{ x.subtitle }}</span>{% endif %}
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="steps wrap" aria-labelledby="h-how">
+  <h2 id="h-how" class="h2">Comment acquérir un tirage</h2>
+  <ol class="steps-list">
+    <li><strong>Choisissez une photographie.</strong> Cliquez sur « Enquire about this work » sous l’image, dans la série ou en plein écran.</li>
+    <li><strong>Envoyez le court formulaire.</strong> L’œuvre est déjà indiquée : ajoutez le format souhaité et votre lieu de résidence. Vous pouvez m’écrire en français.</li>
+    <li><strong>Je vous réponds</strong> pour confirmer la disponibilité, la livraison et le paiement.</li>
+  </ol>
+  <a class="btn" href="{{ '/contact/' | relative_url }}?subject=Print">Demander un tirage</a>
+</section>

@@ -1,0 +1,63 @@
+---
+layout: default
+lang: fr
+title: Accueil
+seo_title: "Jeremy Spierer · Photographe et artiste à Genève"
+permalink: /fr/
+alt_en: /
+body_class: page-home
+description: "Jeremy Spierer, photographe et artiste à Genève : séries photographiques, expositions, tirages d’art signés et cours photo privés."
+---
+{% assign s = site.data.settings %}
+{% assign all_series = site.series | sort: 'order' | where_exp: 'x', 'x.archive != true' %}
+{% assign hx = site.exhibitions | where: 'slug', s.hero_exhibition | first %}
+
+<section class="hero">
+  <div class="hero-bg" style="background-image: url('{{ s.hero_image | relative_url }}')" aria-hidden="true"></div>
+  <div class="hero-inner wrap">
+    <p class="kicker"{% if hx %} data-start="{{ hx.start | date: '%Y-%m-%d' }}" data-end="{% if hx.end and hx.end != '' %}{{ hx.end | date: '%Y-%m-%d' }}{% endif %}" data-before="Exposition à venir" data-during="Exposition en cours" data-after="Exposition récente"{% endif %}>Exposition à venir</p>
+    <h1 class="display hero-title">{{ s.hero_title }}</h1>
+    <p class="hero-text">Tiphaine Koltes × Jeremy Spierer. Avec la Galerie Fahid Taghavi, Salle Centrale de la Madeleine, Genève. Vernissage le 17 novembre 2026.</p>
+    <a class="btn" href="{{ s.hero_link | relative_url }}">Voir l’exposition</a>
+  </div>
+</section>
+
+<section class="statement wrap">
+  <h2 class="display statement-t">Jeremy Spierer, photographe et artiste à Genève</h2>
+  <p class="lead">« Depuis l’enfance, mon regard s’attarde sur ce que je n’étais pas censé voir. Je n’ai jamais cessé de regarder ; j’ai seulement cessé de me cacher. »</p>
+  <a class="more" href="{{ '/fr/a-propos/' | relative_url }}">Lire la démarche</a>
+</section>
+
+<section class="block wrap wide" aria-labelledby="h-series">
+  <div class="block-head">
+    <h2 id="h-series" class="h2">Séries</h2>
+    <a class="more" href="{{ '/series/' | relative_url }}">Toutes les séries</a>
+  </div>
+  <div class="cards">
+    {% for x in all_series %}
+    <a class="card" href="{{ x.url | relative_url }}" hreflang="en">
+      <img src="{{ x.cover | default: x.photos[0].src | relative_url }}" alt="{{ x.title | escape }}, série de Jeremy Spierer" loading="lazy" decoding="async">
+      <span class="card-t">{{ x.title }}</span>
+      {% if x.subtitle %}<span class="card-s" lang="en">{{ x.subtitle }}</span>{% endif %}
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="offers wrap" aria-label="Ce que je propose">
+  <div class="offer">
+    <h3 class="h3">Tirages d’art signés</h3>
+    <p>Tirages signés et numérotés en petites éditions, disponibles directement et auprès de la Galerie Fahid Taghavi.</p>
+    <a class="more" href="{{ '/fr/tirages/' | relative_url }}">En savoir plus</a>
+  </div>
+  <div class="offer">
+    <h3 class="h3">Cours photo privés</h3>
+    <p>Cours individuels à Genève : la rue, le portrait, le travail avec un modèle, le boudoir et le nu artistique.</p>
+    <a class="more" href="{{ '/fr/cours-photo-geneve/' | relative_url }}">En savoir plus</a>
+  </div>
+</section>
+
+<section class="cta wrap">
+  <p class="display cta-t">Tirages, commandes, collaborations</p>
+  <a class="btn" href="{{ '/contact/' | relative_url }}">Me contacter</a>
+</section>
