@@ -1,9 +1,9 @@
-{% assign s = site.data.settings %}
+{% assign s = site.data.settings %}{% assign fr = false %}{% if page.lang == 'fr' %}{% assign fr = true %}{% endif %}
 <footer class="site-footer">
   <div class="foot-grid">
     <div>
       <p class="foot-name">{{ s.name }}</p>
-      <p class="muted">{{ s.tagline }}</p>
+      <p class="muted">{% if fr %}Photographe et artiste · Genève{% else %}{{ s.tagline }}{% endif %}</p>
     </div>
     <div>
       <p class="label">Contact</p>
@@ -11,9 +11,17 @@
       <p><a href="https://www.instagram.com/{{ s.instagram }}/" rel="noopener" target="_blank">@{{ s.instagram }}</a></p>
     </div>
     <div>
-      <p class="label">Represented by</p>
-      <p><a href="{{ s.gallery_url }}" rel="noopener" target="_blank">{{ s.gallery_name }}</a>, Geneva</p>
+      <p class="label">{% if fr %}Représenté par{% else %}Represented by{% endif %}</p>
+      <p><a href="{{ s.gallery_url }}" rel="noopener" target="_blank">{{ s.gallery_name }}</a>, {% if fr %}Genève{% else %}Geneva{% endif %}</p>
+    </div>
+    <div>
+      <p class="label">{% if fr %}Prestations{% else %}Services{% endif %}</p>
+      {% if fr %}<p><a href="{{ '/fr/tirages/' | relative_url }}">Tirages d’art</a></p>
+      <p><a href="{{ '/fr/cours-photo-geneve/' | relative_url }}">Cours photo privés</a></p>
+      {% else %}<p><a href="{{ '/prints/' | relative_url }}">Signed prints</a></p>
+      <p><a href="{{ '/lessons/' | relative_url }}">Private lessons</a></p>
+      <p><a href="{{ '/fr/' | relative_url }}" hreflang="fr" lang="fr">Version française</a></p>{% endif %}
     </div>
   </div>
-  <p class="copy muted">© {{ site.time | date: '%Y' }} {{ s.name }}. All photographs are protected by copyright and may not be reproduced without permission.</p>
+  <p class="copy muted">© {{ site.time | date: '%Y' }} {{ s.name }}. {% if fr %}Toutes les photographies sont protégées par le droit d’auteur et ne peuvent être reproduites sans autorisation.{% else %}All photographs are protected by copyright and may not be reproduced without permission.{% endif %}</p>
 </footer>

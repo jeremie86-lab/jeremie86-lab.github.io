@@ -1,0 +1,8 @@
+{%- assign s = site.data.settings -%}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Person","@id":"{{ site.url }}/#person","name":"{{ s.name }}","url":"{{ site.url }}/","image":"{{ '/assets/img/about/jeremy-spierer.jpg' | absolute_url }}","jobTitle":"Photographer and artist","description":"Swiss photographer and artist based in Geneva, represented by {{ s.gallery_name }}.","email":"mailto:{{ s.email }}","address":{"@type":"PostalAddress","addressLocality":"Geneva","addressRegion":"GE","addressCountry":"CH"},"knowsAbout":["Fine art photography","Street photography","Portrait photography","Event photography"],"sameAs":[{% for u in s.same_as %}"{{ u }}"{% unless forloop.last %},{% endunless %}{% endfor %}]},
+{"@type":"WebSite","@id":"{{ site.url }}/#website","url":"{{ site.url }}/","name":"{{ s.name }}","inLanguage":["en","fr"],"publisher":{"@id":"{{ site.url }}/#person"}}{% if page.service_schema %},
+{"@type":"ProfessionalService","@id":"{{ site.url }}/#service","name":"{{ s.name }}, photographer in Geneva","url":"{{ '/fr/photographe-geneve/' | absolute_url }}","image":"{{ page.cover | default: s.hero_image | absolute_url }}","email":"{{ s.email }}","founder":{"@id":"{{ site.url }}/#person"},"address":{"@type":"PostalAddress","addressLocality":"Genève","addressRegion":"GE","addressCountry":"CH"},"areaServed":[{"@type":"City","name":"Genève"},{"@type":"AdministrativeArea","name":"Suisse romande"}],"availableLanguage":["fr","en"],"serviceType":["Portrait photography","Event photography","Wedding photography","Brand and red carpet photography"]}{% endif %}
+]}
+</script>
