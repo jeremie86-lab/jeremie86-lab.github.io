@@ -23,6 +23,7 @@ permalink: /exhibitions/
       {% include visit-links.html e=e %}
       <div class="prose">{{ e.content | markdownify }}</div>
       <p class="expo-links">
+        {% if e.catalogue %}<a class="more" href="{{ e.catalogue | relative_url }}" target="_blank" rel="noopener">{{ e.catalogue_label | default: 'Exhibition catalogue (PDF)' }}</a>{% endif %}
         {% if e.related_series %}{% assign rs = site.series | where: 'slug', e.related_series | first %}{% if rs %}<a class="more" href="{{ rs.url | relative_url }}">See the series {{ rs.title }}</a>{% endif %}{% endif %}
         {% if e.link %}<a class="more" href="{{ e.link }}" rel="noopener" target="_blank">Venue website</a>{% endif %}
       </p>
