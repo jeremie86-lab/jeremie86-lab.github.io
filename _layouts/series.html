@@ -11,6 +11,7 @@ body_class: page-series
     <div class="series-text">{{ content }}</div>
     {% assign related = site.exhibitions | where: 'related_series', page.slug %}
     {% if related.size > 0 %}<p class="series-links">Shown in {% for e in related %}<a href="{{ '/exhibitions/' | relative_url }}#{{ e.slug }}">{{ e.title }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</p>{% endif %}
+    {% for e in related %}{% if e.catalogue %}<p class="series-links"><a class="more" href="{{ e.catalogue | relative_url }}" target="_blank" rel="noopener">{{ e.catalogue_label | default: 'Exhibition catalogue (PDF)' }}</a></p>{% endif %}{% endfor %}
   </header>
   <div class="wrap wide{% unless page.frame == false %} framed{% endunless %}">
     {% assign works = page.photos | where_exp: 'p', 'p.studio != true' %}{% assign studio = page.photos | where: 'studio', true %}
