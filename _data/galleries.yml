@@ -1,0 +1,4 @@
+# Galeries clients : une entrée par événement, générée avec l'outil « Générateur de code galerie ».
+# La clé est chiffrée avec le code du client : sans le code, l'adresse de la galerie est illisible.
+# Ne jamais écrire de nom de client ici (ce fichier est public sur GitHub).
+[]
