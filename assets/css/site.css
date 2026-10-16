@@ -52,7 +52,7 @@ a{color:inherit;text-decoration-color:color-mix(in srgb,currentColor 40%,transpa
 .bars::before{top:-7px}.bars::after{top:7px}
 .nav-open .bars{background:transparent}.nav-open .bars::before{top:0;transform:rotate(45deg)}.nav-open .bars::after{top:0;transform:rotate(-45deg)}
 
-@media (max-width:1160px){
+@media (max-width:1279px){
   .nav-toggle{display:block}
   .site-nav{position:fixed;inset:0;top:0;flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:6px;padding:96px var(--gutter) 48px;overflow-y:auto;background:var(--bg);opacity:0;visibility:hidden;transition:opacity 220ms var(--ease-out),visibility 220ms;z-index:-1}
   .nav-open .site-nav{opacity:1;visibility:visible}
@@ -442,3 +442,14 @@ body.nav-open{overflow:hidden}
 .svc-facts li::before{content:"";position:absolute;left:0;top:.75em;width:12px;height:1px;background:var(--red)}
 .svc-strip .g-item{margin:0}
 .page-home .block + .offers{padding-top:clamp(40px,6vw,80px)}
+.gallery-form{max-width:460px}
+.gallery-form input{font:700 20px/1.2 var(--display);letter-spacing:.18em;text-transform:uppercase}
+.gallery-msg{margin:0;font-size:15px;color:var(--ink-2)}
+.gallery-msg.is-error{color:var(--red-text)}
+.gallery-help{margin-top:56px;max-width:640px}
+.gallery-help .label{margin:0 0 16px}
+.site-nav a.nav-util{color:var(--muted)}
+.site-nav a.nav-util.is-active{color:var(--red-text)}
+@media (hover:hover) and (pointer:fine){.site-nav a.nav-util:hover{color:var(--ink)}}
+@media (min-width:1280px){.site-nav a.nav-util{margin-left:10px}}
+@media (min-width:1280px) and (max-width:1480px){.site-nav{gap:18px}.site-nav a{letter-spacing:.14em}.site-header{gap:14px}}
