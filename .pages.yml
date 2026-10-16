@@ -102,3 +102,11 @@ content:
       - {name: year, label: Year, type: string}
       - {name: title, label: Award, type: string}
       - {name: detail, label: Detail, type: string}
+  - name: galleries
+    label: "Client galleries (codes)"
+    type: file
+    path: _data/galleries.yml
+    list: true
+    fields:
+      - {name: key, label: "Clé (copiée depuis le générateur de code galerie)", type: string, required: true}
+      - {name: expires, label: "Date de fin (la galerie n'est plus accessible par code après cette date)", type: date}
