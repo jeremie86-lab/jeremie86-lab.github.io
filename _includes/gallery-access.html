@@ -1,0 +1,28 @@
+{%- assign fr = false -%}{%- if page.lang == 'fr' -%}{%- assign fr = true -%}{%- endif -%}
+{%- capture i18n -%}{% if fr %}{"short":"Le code comporte 8 caractères, par exemple K7Q2-M9XA.","browser":"Votre navigateur est trop ancien pour ouvrir la galerie. Essayez avec un navigateur récent ou écrivez-moi.","wait":"Recherche de votre galerie…","unknown":"Ce code ne correspond à aucune galerie. Vérifiez-le ou écrivez-moi.","expired":"Cette galerie n’est plus en ligne. Écrivez-moi si vous souhaitez la réactiver.","go":"Ouverture de votre galerie…"}{% else %}{"short":"The code has 8 characters, for example K7Q2-M9XA.","browser":"Your browser is too old to open the gallery. Please try a recent browser or write to me.","wait":"Looking for your gallery…","unknown":"This code doesn’t match any gallery. Please check it or write to me.","expired":"This gallery is no longer online. Write to me if you would like it reactivated.","go":"Opening your gallery…"}{% endif %}{%- endcapture -%}
+<section class="contact wrap">
+  <p class="kicker">{% if fr %}Espace client{% else %}Client area{% endif %}</p>
+  <h1 class="display">{% if fr %}Vos photos{% else %}Your photos{% endif %}</h1>
+  <p class="lead">{% if fr %}Saisissez le code reçu avec votre livraison pour ouvrir votre galerie privée.{% else %}Enter the code you received with your delivery to open your private gallery.{% endif %}</p>
+  <form class="contact-form gallery-form" data-gallery-form data-i18n='{{ i18n | strip }}' autocomplete="off">
+    <label class="f"><span class="label">{% if fr %}Code galerie{% else %}Gallery code{% endif %}</span>
+      <input type="text" name="code" inputmode="text" autocapitalize="characters" spellcheck="false" placeholder="K7Q2-M9XA" required maxlength="12"></label>
+    <button class="btn" type="submit">{% if fr %}Ouvrir ma galerie{% else %}Open my gallery{% endif %}</button>
+    <p class="gallery-msg" data-gallery-msg role="status" aria-live="polite" hidden></p>
+  </form>
+  <div class="gallery-help prose">
+    <h2 class="label">{% if fr %}Dans votre galerie{% else %}In your gallery{% endif %}</h2>
+    <ul class="svc-facts">
+      {% if fr %}<li>Marquez vos photos préférées avec le cœur pour me faire part de votre sélection.</li>
+      <li>Téléchargez les photos une à une ou toutes ensemble, avec le code de téléchargement indiqué dans votre e-mail.</li>
+      <li>La galerie reste en ligne un mois : pensez à enregistrer vos photos.</li>
+      <li>Code perdu ou question ? <a href="{{ '/contact/' | relative_url }}">Écrivez-moi</a>.</li>
+      {% else %}<li>Mark your favourite photos with the heart to share your selection with me.</li>
+      <li>Download the photos one by one or all at once, using the download PIN in your email.</li>
+      <li>The gallery stays online for one month: remember to save your photos.</li>
+      <li>Lost your code or have a question? <a href="{{ '/contact/' | relative_url }}">Write to me</a>.</li>{% endif %}
+    </ul>
+  </div>
+</section>
+<script type="application/json" id="gallery-data">{{ site.data.galleries | jsonify }}</script>
+<script src="{{ '/assets/js/galleries.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
