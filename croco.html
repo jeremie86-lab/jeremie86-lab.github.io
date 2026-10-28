@@ -1,0 +1,36 @@
+---
+layout: default
+title: "CROCO · Vernissage"
+permalink: /croco/
+lang: fr
+sitemap: false
+noindex: true
+cover: /assets/img/exhibitions/croco/croco-cover.jpg
+description: "Vernissage de CROCO, Tiphaine Koltes × Jeremy Spierer : mardi 17 novembre 2026, 18h–21h, Galerie Fahid Taghavi, Genève. Ajouter l'événement à votre agenda."
+---
+{%- capture gtitle %}Vernissage CROCO – Koltes × Spierer{% endcapture -%}
+{%- capture gloc %}Galerie Fahid Taghavi, Salle Centrale de la Madeleine (1er étage), Rue de la Madeleine 10, 1204 Genève{% endcapture -%}
+{%- capture gdetails %}Vernissage de CROCO, exposition de Tiphaine Koltes (peinture) et Jeremy Spierer (photographie). {{ '/croco/' | absolute_url }}{% endcapture -%}
+<style>
+.cal-choice{display:flex;flex-wrap:wrap;gap:16px;margin:0}
+.cal-choice .btn{font-size:15px;padding:28px 40px;min-width:280px;text-align:center}
+@media (max-width:600px){.cal-choice{flex-direction:column}.cal-choice .btn{width:100%;min-width:0;padding:30px 20px;font-size:15px}}
+</style>
+<section class="contact wrap">
+  <p class="label">Invitation au vernissage</p>
+  <h1 class="display">CROCO</h1>
+  <p class="lead">Tiphaine Koltes × Jeremy Spierer<br>
+    Mardi 17 novembre 2026, 18h – 21h<br>
+    Galerie Fahid Taghavi, Salle Centrale de la Madeleine, 1<sup>er</sup> étage<br>
+    Rue de la Madeleine 10, 1204 Genève</p>
+
+  <p class="label" style="margin-top:40px">Ajouter à votre agenda</p>
+  <p class="cal-choice">
+    <a class="btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text={{ gtitle | url_encode }}&amp;dates=20261117T180000/20261117T210000&amp;ctz=Europe/Zurich&amp;location={{ gloc | url_encode }}&amp;details={{ gdetails | url_encode }}" rel="noopener" target="_blank">Google Agenda</a>
+    <a class="btn" href="{{ '/croco.ics' | relative_url }}">Apple · Outlook</a>
+  </p>
+  <p class="visit-links">
+    <a href="https://www.google.com/maps/search/?api=1&amp;query={{ gloc | url_encode }}" rel="noopener" target="_blank">Plan d'accès</a>
+    <a href="{{ '/series/croco/' | relative_url }}">Les œuvres</a>
+  </p>
+</section>

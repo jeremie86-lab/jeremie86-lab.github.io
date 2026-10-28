@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Jeremy Spierer//CROCO//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:croco-vernissage-20261117@jeremyspierer.com
+DTSTAMP:20261028T090000Z
+DTSTART;TZID=Europe/Zurich:20261117T180000
+DTEND;TZID=Europe/Zurich:20261117T210000
+SUMMARY:Vernissage CROCO – Koltes × Spierer
+LOCATION:Galerie Fahid Taghavi\, Salle Centrale de la Madeleine (1er étage
+ )\, Rue de la Madeleine 10\, 1204 Genève
+DESCRIPTION:Vernissage de CROCO\, exposition de Tiphaine Koltes (peinture) 
+ et Jeremy Spierer (photographie).\nGalerie Fahid Taghavi\, Salle Centrale 
+ de la Madeleine\, 1er étage.\nhttps://www.jeremyspierer.com/croco/
+URL:https://www.jeremyspierer.com/croco/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
