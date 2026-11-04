@@ -1,4 +1,5 @@
 # Galeries clients : une entrée par événement, générée avec l'outil « Générateur de code galerie ».
 # La clé est chiffrée avec le code du client : sans le code, l'adresse de la galerie est illisible.
 # Ne jamais écrire de nom de client ici (ce fichier est public sur GitHub).
-[]
+- key: v1.92ea130526eec6d5.mjwD5dMr-Ilbw53P.g6DhCvBx-iLRJPja_LQmS_25j0QTMJX2r33V-QS90AeNYb7S83JLRqAB-u2P8k4ja4Gs8XbuyUA5cTb0wyUOg1rC
+  expires: 2026-12-04
