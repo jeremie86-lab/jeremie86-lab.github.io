@@ -13,7 +13,7 @@
   </span>
   {%- endif -%}
   {%- if e.address and e.address != '' %}
-  <a href="https://www.google.com/maps/search/?api=1&amp;query={{ gloc | url_encode }}" rel="noopener" target="_blank">Map</a>
+  <a href="https://www.google.com/maps/search/?api=1&amp;query={{ gloc | url_encode }}" rel="noopener" target="_blank"{% if e.end and e.end != '' %} data-hide-after="{{ e.end | date: '%Y-%m-%d' }}"{% endif %}>Map</a>
   {%- endif %}
 </p>
 {%- endif -%}{%- endif -%}
