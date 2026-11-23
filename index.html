@@ -12,7 +12,7 @@ alt_fr: /fr/
 <section class="hero">
   <div class="hero-bg" style="background-image: url('{{ s.hero_image | relative_url }}')" aria-hidden="true"></div>
   <div class="hero-inner wrap">
-    <p class="kicker"{% if hx %} data-start="{{ hx.start | date: '%Y-%m-%d' }}" data-end="{% if hx.end and hx.end != '' %}{{ hx.end | date: '%Y-%m-%d' }}{% endif %}" data-before="{{ s.hero_kicker }}" data-during="Now showing" data-after="Recent exhibition"{% endif %}>{{ s.hero_kicker }}</p>
+    <p class="kicker"{% if hx %} data-start="{{ hx.start | date: '%Y-%m-%d' }}" data-end="{% if hx.end and hx.end != '' %}{{ hx.end | date: '%Y-%m-%d' }}{% endif %}" data-before="{{ s.hero_kicker }}" data-during="Now showing" data-after="Continues online"{% endif %}>{{ s.hero_kicker }}</p>
     <h1 class="display hero-title">{{ s.hero_title }}</h1>
     <p class="hero-text">{{ s.hero_text }}</p>
     <a class="btn" href="{{ s.hero_link | relative_url }}">See the exhibition</a>
